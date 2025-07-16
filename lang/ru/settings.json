@@ -1,0 +1,8 @@
+{
+    "name": "Русский",
+    "fonts_range": [32, 1105],
+    "special_mode": true,
+    "enable_translated_songs_switch": true,
+    "monospace_fonts": false,
+    "limit_by_width": true
+}

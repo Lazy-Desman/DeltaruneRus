@@ -1,0 +1,54 @@
+{
+    "sprites_settings": {
+		"spr_btact": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_btdefend": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_btitem": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_btfight": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_btspare": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_bttech": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+        "IMAGE_LOGO_CENTER_SEPARATE": {
+            "frame_num": 11
+        },
+        "sp_IMAGE_LOGO_CENTER_SEPARATE": {
+            "frame_num": 9
+        },
+        "spr_ch2_keyboard_tile_text": {
+            "frame_num": 45
+        },
+		"spr_bnameralsei": {
+			"yoffset": 1
+        },
+		"spr_hero_hp": {
+			"yoffset": 1
+        },
+		"spr_arcade_fight": {
+			"yoffset": 1
+        },
+        "spr_darkmenudesc": {
+            "xoffset": 9,
+            "yoffset": 1
+        }
+    },
+    "welcome_sign_x1": [21, 57, 84, 111, 138, 179, 206, 233, 268, 295, 324, 351, 378, 405, 432],
+    "welcome_sign_x2": [54, 81, 108, 135, 162, 203, 230, 265, 292, 321, 348, 375, 402, 429, 456],
+    "button_sounds_symbols": ["А","Б","В","Г","Д","Е","Ё","Ж","З","И","Й","К","Л","М","Н","О","П","Р","С","Т","У","Ф","Х","Ц","Ч","Ш","Щ","Ъ","Ы","Ь","Э","Ю","Я","0","1","2","3","4","5","6","7","8","9","!","?"],
+    "only_one_tutoriel": 1
+}

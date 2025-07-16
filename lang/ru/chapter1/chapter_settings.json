@@ -1,0 +1,44 @@
+{
+	"sprites_settings": {
+		"spr_btact": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_btdefend": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_btitem": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_btfight": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_btspare": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+		"spr_bttech": {
+            "xoffset": 8,
+			"yoffset": 0
+        },
+        "spr_blockler_с": {
+            "frame_num": 6
+        },
+        "spr_blockler_и": {
+            "frame_num": 4
+        },
+		"spr_bnameralsei": {
+			"yoffset": 1
+        },
+        "spr_darkmenudesc": {
+            "xoffset": 9,
+            "yoffset": 1
+        }
+	},
+    "do_not_forget_timings": [67, 150, 247, 269, 365, 385, 488, 512, 602, 642, 707, 776, 843, 866, 953, 1039, 1039, 1385, 1475, 1545, 1305, 1383, 1700, 1960, 2060, 2080],
+    "boob": "исис",
+    "sp_boob": "boob"
+}
