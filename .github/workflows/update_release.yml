@@ -37,6 +37,13 @@ jobs:
           zip -r ../scripts.zip *
           cd ..
 
+      - name: Move "latest" tag to current commit
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git tag -f latest
+          git push -f origin latest
+
       - name: Delete latest release (but keep tag)
         uses: actions/github-script@v7
         with:
