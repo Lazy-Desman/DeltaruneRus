@@ -23,7 +23,7 @@ jobs:
       - name: Install 7-Zip
         run: sudo apt-get update && sudo apt-get install -y p7zip-full
 
-      - name: Create lang.7z and scripts.7z ("fast" compression)
+      - name: Create "lang.7z" and "scripts.7z" ("fast" compression)
         run: |
           # "lang" - with root folder, "scripts" - without
           7z a -t7z -mx=1 lang.7z ./lang
