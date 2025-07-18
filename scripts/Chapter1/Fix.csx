@@ -51,7 +51,7 @@ bool ReplaceGML(UndertaleCode code, string text)
     if (!result.Successful)
     {
         File.WriteAllText(Path.Combine(scriptFolder, "test.txt"), text);
-        ScriptMessage(code.Name.Content);
+        ScriptMessage("Ошибка при компиляции кода '" + code.Name.Content + "'");
         return false;
     }
     return true;
@@ -155,7 +155,16 @@ void GetOrig(string codeName)
         }
     }
 
-    var oldText = Decompile(oldCode).Substring(12);
+    var oldText = "";
+    try
+    {
+        oldText = Decompile(oldCode).Substring(12);
+    }
+    catch (Exception err)
+    {
+        ScriptError("Ошибка при декомпиляции кода '" + codeName + "'. Вероятнее всего вы пытаетесь запустить скрипт на старых версиях игры (например, демо-версии).");
+        throw new Exception("Ошибка при декомпиляции кода '" + codeName + "'. Вероятнее всего вы пытаетесь запустить скрипт на старых версиях игры (например, демо-версии).");
+    }
     oldText = oldText.Remove(oldText.Length - 3).Replace("\\n", "\n").Replace("\\\"", "\"").Replace("\\_n", "\\n").Replace("\\\\", "\\");
     ReplaceGML(code, oldText);
 
