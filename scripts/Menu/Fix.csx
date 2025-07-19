@@ -9,14 +9,6 @@ using System.Text.RegularExpressions;
 string gameFolder = Path.GetDirectoryName(FilePath) + Path.DirectorySeparatorChar;
 string scriptFolder = Path.GetDirectoryName(ScriptPath) + Path.DirectorySeparatorChar;
 
-void SaveDataFile() {
-    Console.WriteLine(FilePath);
-    using (FileStream fs = new(FilePath, FileMode.Create, FileAccess.Write))
-    {
-        UndertaleIO.Write(fs, Data);
-    }
-}
-
 var globalDecompileContext = new GlobalDecompileContext(Data);
 
 void CreateBlankFunction(string funcName) {
@@ -105,9 +97,4 @@ foreach(var font in Data.Fonts) {
     }
 }
 
-
-
 #endregion
-
-
-SaveDataFile()
