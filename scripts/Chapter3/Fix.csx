@@ -51,7 +51,7 @@ bool ReplaceGML(UndertaleCode code, string text)
     if (!result.Successful)
     {
         File.WriteAllText(Path.Combine(scriptFolder, "test.txt"), text);
-        ScriptMessage(code.Name.Content);
+        ScriptMessage("Ошибка при компиляции кода '" + code.Name.Content + "'");
         return false;
     }
     return true;
@@ -155,7 +155,16 @@ void GetOrig(string codeName)
         }
     }
 
-    var oldText = Decompile(oldCode).Substring(12);
+    var oldText = "";
+    try
+    {
+        oldText = Decompile(oldCode).Substring(12);
+    }
+    catch (Exception err)
+    {
+        ScriptMessage("Ошибка при декомпиляции кода '" + codeName + "'. Вероятнее всего вы пытаетесь запустить скрипт на старых версиях игры (например, демо-версии).");
+        throw new Exception("Ошибка при декомпиляции кода '" + codeName + "'. Вероятнее всего вы пытаетесь запустить скрипт на старых версиях игры (например, демо-версии).");
+    }
     oldText = oldText.Remove(oldText.Length - 3).Replace("\\n", "\n").Replace("\\\"", "\"").Replace("\\_n", "\\n").Replace("\\\\", "\\");
     ReplaceGML(code, oldText);
 
@@ -262,11 +271,18 @@ await Task.Run(() =>
     }
 
     foreach (var codeName in jsonCodeUpdates.Keys) {
-        GetOrig(codeName);
-
-        foreach (var change in jsonCodeUpdates[codeName])
+        if (Data.Code.ByName(codeName) == null)
         {
-            ReplacePart(codeName, Regex.Escape(change["old"]), change["new"]);
+            ScriptMessage("Несуществующий код '" + codeName + "'. Пропускаем.");
+        }
+        else
+        {
+            GetOrig(codeName);
+
+            foreach (var change in jsonCodeUpdates[codeName])
+            {
+                ReplacePart(codeName, Regex.Escape(change["old"]), change["new"]);
+            }
         }
 
         IncrementProgress();
@@ -293,7 +309,6 @@ var scriptsWith8bit = new List<string>()
 "gml_Object_obj_gameshow_ui_scorebox_Draw_0",
 "gml_Object_obj_GSA02_B0_Draw_0",
 "gml_Object_obj_quizsequence_Draw_0",
-"gml_Object_obj_round_evaluation_Draw_0",
 "gml_Object_obj_susiezilla_perfect_chain_letter_Draw_0",
 "gml_Object_obj_swordroute_consolestarter_Draw_0",
 };
@@ -305,17 +320,11 @@ var scriptsWithMainBig = new List<string>()
 "gml_Object_obj_chefs_customer_Draw_0",
 "gml_Object_obj_chefs_scoretxt_Draw_0",
 "gml_Object_obj_chefs_toggles_Draw_0",
-"gml_Object_obj_darkcontroller_Draw_0",
 "gml_Object_obj_elnina_bouncingbullet_Draw_0",
-"gml_Object_obj_fusionmenu_Draw_0",
 "gml_Object_obj_gif_analyzer_Draw_0",
-"gml_Object_obj_intro_ch2_Draw_0",
 "gml_Object_obj_intro_ch3_Draw_0",
 "gml_Object_obj_rouxls_annyoing_dog_controller_Draw_0",
-"gml_Object_obj_savemenu_Draw_0",
 "gml_Object_obj_shootout_controller_Draw_64",
-"gml_Object_obj_soundtester_Draw_0",
-"gml_Object_obj_spritecomparer_Draw_0",
 "gml_Object_obj_tenna_enemy_minigametext_Draw_0",
 "gml_Object_obj_tenna_minigame_ui_Draw_0",
 "gml_Object_obj_title_placeholder_Draw_0"
@@ -340,7 +349,6 @@ var scriptsWithMain = new List<string>()
 "gml_Object_obj_shootout_controller_Draw_64",
 "gml_Object_obj_shootout_text_Draw_0",
 "gml_Object_obj_snd_maker_Draw_0",
-"gml_Object_obj_soundtester_Draw_0",
 "gml_Object_obj_tenna_minigame_ui_Draw_0",
 "gml_Object_obj_time_Draw_64",
 "gml_Object_obj_title_placeholder_Draw_0",
@@ -368,7 +376,6 @@ var scriptsWithSmall = new List<string>()
 "gml_Object_obj_overworldc_Draw_0",
 "gml_Object_obj_pushableblock_board_Draw_0",
 "gml_Object_obj_room_console_room_Draw_0",
-"gml_Object_obj_soundtester_Draw_0",
 "gml_Object_obj_title_placeholder_Draw_0",
 "gml_Object_obj_treasure_room_Draw_0"
 };
