@@ -1,6 +1,6 @@
 scr_board_battlehealth();
 depth = 100010;
-kris = 1184;
+kris = spr_kris_quiz_cough;
 
 with (obj_caterpillarchara)
 {
@@ -12,7 +12,7 @@ with (obj_caterpillarchara)
 }
 
 plpo = obj_ch3_gameshow.playerpodiums;
-tenna = 157;
+tenna = obj_actor_tenna;
 console = obj_ch3_gameshow.gameconsole;
 couch = obj_ch3_gameshow.couch;
 wires = obj_ch3_gameshow.wires;
