@@ -140,10 +140,15 @@ List<string> backedList = new List<string>();
 
 string Decompile(UndertaleCode code)
 {
-    if (changedCodes.ContainsKey(code.Name.Content))
-        return changedCodes[code.Name.Content];
+    try
+    {
+        if (changedCodes.ContainsKey(code.Name.Content))
+            return changedCodes[code.Name.Content];
 
-    return new Underanalyzer.Decompiler.DecompileContext(globalDecompileContext, code, decompilerSettings).DecompileToString();
+        return new Underanalyzer.Decompiler.DecompileContext(globalDecompileContext, code, decompilerSettings).DecompileToString();
+    } catch (Exception e) {
+        throw new Exception(string.Format("Ошибка при декомпиляции кода \"{0}\". Если у вас старая версия игры, скачайте новейшую версию. \nЕсли же и так новейшая, то сообщите разработчикам о ошибке.", code.Name.Content));
+    }
 }
 
 string Decompile(string code)
