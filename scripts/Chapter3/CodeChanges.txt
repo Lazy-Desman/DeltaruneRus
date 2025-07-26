@@ -1,0 +1,767 @@
+=== gml_Object_obj_shop1_Draw_0
+---
+"$" + string_hash_to_newline(string(global.gold))
++++
+stringsetsubloc("$~1", string(global.gold), "obj_shop1_slash_Draw_0_gml_1_0")
+%%%
+
+
+
+=== gml_Object_obj_shop2_Draw_0
+---
+"$" + string_hash_to_newline(string(global.gold))
++++
+stringsetsubloc("$~1", string(global.gold), "obj_shop2_slash_Draw_0_gml_1_0")
+%%%
+
+
+
+=== gml_Object_obj_moneydisplay_Draw_0
+---
+"$" + string(global.gold)
++++
+stringsetsubloc("$~1", string(global.gold), "obj_moneydisplay_Draw_0_gml_1_0")
+%%%
+
+
+
+=== gml_Object_DEVICE_FAILURE_Step_0
+---
+NAMEX[0][0] = 80
++++
+scr_84_set_draw_font("main")
+NAMEX[0][0] = 80 - (string_width(NAME[0][0]) - string_width("CONTINUE"))
+%%%
+
+
+
+=== gml_Object_DEVICE_NAMER_Draw_0
+---
+FN_3 == "GASTER"
++++
+FN_3 == "GASTER" || FN_3 == stringsetloc("GASTER", "DEVICE_NAMER_slash_Draw_0_gml_00_0")
+%%%
+
+
+
+=== gml_Object_obj_npc_dojo_Step_0
+---
+msgnextsubloc("* (You received ~1!)/%", dojoPrizeName, "obj_npc_dojo_slash_Step_0_gml_51_0")
++++
+msgnextsubloc("* (You received ~1!)/%", scr_item_localized_name_acc(dojoPrizeValue, dojoPrizeType, dojoPrizeName), "obj_npc_dojo_slash_Step_0_gml_51_0")
+%%%
+
+
+
+=== gml_Object_obj_overworldc_Step_0
+---
+stringsetsubloc("* You bid a quiet farewell to the ~1.", global.litemname[global.menucoord[1]], "obj_overworldc_slash_Step_0_gml_34_0_b")
++++
+stringsetsubloc("* You bid a quiet farewell to the ~1.", scr_item_localized_name_acc(global.litem[global.menucoord[1]], 4), "obj_overworldc_slash_Step_0_gml_34_0_b")
+%%%
+
+---
+stringsetsubloc("* You put the ~1 on the ground and gave it a little pat.", global.litemname[global.menucoord[1]], "obj_overworldc_slash_Step_0_gml_34_0")
++++
+stringsetsubloc("* You put the ~1 on the ground and gave it a little pat.", scr_item_localized_name_acc(global.litem[global.menucoord[1]], 4), "obj_overworldc_slash_Step_0_gml_34_0")
+%%%
+
+---
+stringsetsubloc("* You threw the ~1 on the ground like the piece of trash it is.", global.litemname[global.menucoord[1]], "obj_overworldc_slash_Step_0_gml_36_0")
++++
+stringsetsubloc("* You threw the ~1 on the ground like the piece of trash it is.", scr_item_localized_name_acc(global.litem[global.menucoord[1]], 4), "obj_overworldc_slash_Step_0_gml_36_0")
+%%%
+
+---
+stringsetsubloc("* You abandoned the ~1.", global.litemname[global.menucoord[1]], "obj_overworldc_slash_Step_0_gml_38_0_b")
++++
+stringsetsubloc("* You abandoned the ~1.", scr_item_localized_name_acc(global.litem[global.menucoord[1]], 4), "obj_overworldc_slash_Step_0_gml_38_0_b")
+%%%
+
+---
+stringsetsubloc("* The ~1 was thrown away.", global.litemname[global.menucoord[1]], "obj_overworldc_slash_Step_0_gml_38_0")
++++
+stringsetsubloc("* The ~1 was thrown away.", scr_item_localized_name_acc(global.litem[global.menucoord[1]], 4), "obj_overworldc_slash_Step_0_gml_38_0")
+%%%
+
+
+
+=== gml_Object_obj_room_ranking_hub_Create_0
+---
+(board_flag, true)
++++
+(board_flag)
+%%%
+
+---
+_ranking = "S"
++++
+_ranking = stringsetloc("S", "scr_get_rank_letter_slash_scr_get_rank_letter_gml_5_1")
+%%%
+
+
+
+=== gml_Object_obj_dbulletcontroller_Step_0
+---
+scr_enemyblcon(x - 60, global.monstery[myself] + 70, 12)
++++
+scr_enemyblcon(x - 60, global.monstery[myself] + 70, 12.5)
+%%%
+
+---
+scr_enemyblcon(x - 5, global.monstery[myself] + 70, 12.3)
++++
+scr_enemyblcon(x + 5, global.monstery[myself] + 70, 12.5)
+%%%
+
+
+
+=== gml_Object_obj_ch3_GSA06_Step_0
+---
+var round_sprite = (global.lang == "ja") ? spr_funnytext_round : spr_funnytext_rounds;
++++
+var round_sprite = scr_84_get_sprite("spr_funnytext_rounds");
+%%%
+
+---
+scr_funnytext_init(0, 0, -14, spr_funnytext_stop, 0, 0);
++++
+scr_funnytext_init(0, 0, -14, scr_84_get_sprite("spr_funnytext_stop"), 0, 0);
+%%%
+
+---
+scr_funnytext_init(4, 0, -16, spr_funnytext_round, 0, 0);
++++
+scr_funnytext_init(4, 0, -16, scr_84_get_sprite("spr_funnytext_round"), 0, 0);
+%%%
+
+---
+scr_funnytext_init(2, 0, -14, spr_funnytext_round_1, 0, 0);
++++
+scr_funnytext_init(2, 0, -14, scr_84_get_sprite("spr_funnytext_round_1"), 0, 0);
+%%%
+
+
+
+=== gml_Object_obj_ch3_GSA01G_Step_0
+---
+var tv_time_sprite = (global.lang == "ja") ? spr_dw_tv_time_funnytext : spr_funnytext_tv_time;
++++
+var tv_time_sprite = scr_84_get_sprite("spr_funnytext_tv_time");
+%%%
+
+
+
+=== gml_Object_obj_ch3_GSA04_Step_0
+---
+scr_funnytext_init(1, 0, -14, spr_funnytext_big, 0, 0);
++++
+scr_funnytext_init(1, 0, -14, scr_84_get_sprite("spr_funnytext_big"), 0, 0);
+%%%
+
+
+
+=== gml_Object_obj_ch3_GSC05_Step_0
+---
+scr_funnytext_init(3, 0, -10, spr_funnytext_special, 0, 0);
++++
+scr_funnytext_init(3, 0, -10, scr_84_get_sprite("spr_funnytext_special"), 0, 0);
+%%%
+
+
+
+=== gml_Object_obj_ch3_GSB03_Step_0
+---
+scr_funnytext_init(1, -10, 0, spr_funnytext_breaking_news, 0, 0);
++++
+scr_funnytext_init(1, -10, 0, scr_84_get_sprite("spr_funnytext_breaking_news"), 0, 0);
+%%%
+
+---
+scr_funnytext_init(3, -10, -14, spr_funnytext_bonus_round, 0, 0);
++++
+scr_funnytext_init(3, -10, -14, scr_84_get_sprite("spr_funnytext_bonus_round"), 0, 0);
+%%%
+
+
+
+=== gml_Object_obj_npc_sign_Other_10
+---
+scr_funnytext_init(0, 0, 0, spr_funnytext_free, 0, 0);
++++
+scr_funnytext_init(0, 0, 0, scr_84_get_sprite("spr_funnytext_free"), 0, 0);
+%%%
+
+---
+scr_funnytext_init(1, 0, 0, spr_funnytext_resumes, 1, 0);
++++
+scr_funnytext_init(1, 0, 0, scr_84_get_sprite("spr_funnytext_resumes"), 1, 0);
+%%%
+
+
+
+=== gml_Object_obj_ch3_GSC07_Step_0
+---
+scr_funnytext_init(1, 0, 0, spr_funnytext_game_over, 0, 0);
++++
+scr_funnytext_init(1, 0, 0, scr_84_get_sprite("spr_funnytext_game_over"), 0, 0);
+%%%
+
+---
+scr_funnytext_init(2, 0, -14, spr_funnytext_game, 0, 0);
++++
+scr_funnytext_init(2, 0, -14, scr_84_get_sprite("spr_funnytext_game"), 0, 0);
+%%%
+
+---
+scr_funnytext_init(3, 0, -14, spr_funnytext_over_small, 0, 0);
++++
+scr_funnytext_init(3, 0, -14, scr_84_get_sprite("spr_funnytext_over_small"), 0, 0);
+%%%
+
+
+
+=== gml_Object_obj_ch3_GSB01_Step_0
+---
+scr_funnytext_init(0, 0, -14, spr_funnytext_tv_time, 0, 0);
++++
+scr_funnytext_init(0, 0, -14, scr_84_get_sprite("spr_funnytext_tv_time"), 0, 0);
+%%%
+
+
+
+=== gml_Object_obj_gameover_minigame_Draw_0
+---
+minigametext.mystring = "GAME CLEAR!";
++++
+minigametext.mystring = stringsetloc("GAME CLEAR!", "obj_gameover_minigame_slash_Draw_0_gml_0_0");
+%%%
+
+---
+draw_set_halign(fa_center)
++++
+draw_set_halign(fa_center); draw_set_font(scr_84_get_font("main"))
+%%%
+
+
+
+=== gml_Object_obj_shootout_controller_Draw_64
+---
+"SCORE: "
++++
+stringsetloc("SCORE: ", "obj_shootout_controller_slash_Draw_64_gml_0_0")
+%%%
+
+---
+"TIME LEFT: "
++++
+stringsetloc("TIME LEFT: ", "obj_shootout_controller_slash_Draw_64_gml_1_0")
+%%%
+
+
+
+=== gml_Object_obj_board_event_lawnmower_Draw_0
+---
+"SCORE: "
++++
+stringsetloc("SCORE: ", "obj_board_event_lawnmower_slash_Draw_0_gml_0_0")
+%%%
+
+---
+"TIME: "
++++
+stringsetloc("TIME: ", "obj_board_event_lawnmower_slash_Draw_0_gml_1_0")
+%%%
+
+
+
+=== gml_Object_obj_quizsequence_Create_0
+---
+suname = "ASS";
++++
+suname = stringsetloc("ASS", "obj_ch3_GSA02_slash_Step_0_gml_388_0");
+%%%
+
+
+
+=== gml_Object_obj_rhythmgame_Other_12
+---
+draw_set_font(scr_84_get_font("main"))
++++
+draw_set_font(scr_84_get_font("main_mono"))
+%%%
+
+---
+string_length(current_lyric)
++++
+string_length(string_replace_all(current_lyric, "-", ""))
+%%%
+
+
+
+=== gml_Object_obj_dw_ch3_teevie_quiz_controller_Create_0
+---
+var _char = (j == 0) ? "A" : "B";
++++
+var _char = (j == 0) ? stringsetloc("A", "obj_dw_ch3_teevie_quiz_screen_slash_Draw_0_gml_1_0") : stringsetloc("B", "obj_dw_ch3_teevie_quiz_screen_slash_Draw_0_gml_2_0");
+%%%
+
+---
+var _button_index = (arg1 == "A") ? 0 : 1;
++++
+var _button_index = (arg1 == stringsetloc("A", "obj_dw_ch3_teevie_quiz_screen_slash_Draw_0_gml_1_0")) ? 0 : 1;
+%%%
+
+
+
+=== gml_Object_obj_quizroom_Step_0
+---
+su_pomark.mystring = "ASS";
++++
+su_pomark.mystring = stringsetloc("ASS", "obj_ch3_GSA02_slash_Step_0_gml_388_0");
+%%%
+
+---
+ra_pomark.mystring = "RAL";
++++
+ra_pomark.mystring = stringsetloc("RAL", "obj_ch3_GSA02_slash_Step_0_gml_313_0");
+%%%
+
+
+
+=== gml_Object_obj_b1lancer_Draw_0
+---
+draw_sprite_ext(spr_board_lancercactus_help, lang
++++
+draw_sprite_ext(scr_84_get_sprite("spr_board_lancercactus_help"), 0
+%%%
+
+
+
+=== gml_Object_obj_dw_ch3_b3bs_officesign_Create_0
+---
+if (global.lang == "ja")
++++
+if (false)
+%%%
+
+
+
+=== gml_Object_obj_chefs_customer_Step_0
+---
+var specialnote = scr_marker_ext(4, 476, spr_ch3_chef_specialguestText, 2, 2);
++++
+var specialnote = scr_marker_ext(4, 476, scr_84_get_sprite("spr_ch3_chef_specialguestText"), 2, 2);
+%%%
+
+---
+if (global.lang == "ja")
++++
+if (false)
+%%%
+
+
+
+=== gml_Object_obj_board_event_sphinx_tenna_Step_0
+---
+spr_board_inventory_q)
++++
+scr_84_get_sprite("spr_board_inventory_q"))
+%%%
+
+
+=== gml_Object_obj_board_b3topdoor_Step_0
+---
+spr_board_inventory_q,
++++
+scr_84_get_sprite("spr_board_inventory_q"),
+%%%
+
+
+
+=== gml_Object_obj_dw_ranking_door_Create_0
+---
+var sprite_name = asset_get_index("spr_dw_ranking_door_" + arg0);
++++
+var sprite_name = scr_84_get_sprite("spr_dw_ranking_door_" + arg0);
+%%%
+
+
+
+=== gml_Object_obj_dw_teevie_tv_screens_treasure_Step_0
+---
+screen.set_screen_sprite(spr_dw_teevie_tv_shows);
++++
+screen.set_screen_sprite(scr_84_get_sprite("spr_dw_teevie_tv_shows"));
+%%%
+
+
+
+=== gml_Object_obj_dw_teevie_tvtest_Draw_0
+---
+screensprite[i][j] = spr_dw_teevie_tv_shows;
++++
+screensprite[i][j] = scr_84_get_sprite("spr_dw_teevie_tv_shows");
+%%%
+
+
+
+=== gml_GlobalScript_scr_teevie_screen
+---
+_screensprite = spr_dw_teevie_tv_shows
++++
+_screensprite = scr_84_get_sprite("spr_dw_teevie_tv_shows");
+%%%
+
+
+
+=== gml_Object_obj_dw_teevie_tv_screens_Step_0
+---
+screen.set_screen_sprite(spr_dw_teevie_tv_shows);
++++
+screen.set_screen_sprite(scr_84_get_sprite("spr_dw_teevie_tv_shows"));
+%%%
+
+
+
+=== gml_Object_obj_actor_tenna_Draw_0
+---
+rosetennasprite = spr_tenna_nose_blossom;
++++
+rosetennasprite = scr_84_get_sprite("spr_tenna_nose_blossom");
+%%%
+
+
+
+=== gml_Object_obj_quizroom_Create_0
+---
+tenna_podium = board4 ? spr_tenna_pose_podium_evil : spr_tenna_pose_podium;
++++
+tenna_podium = board4 ? scr_84_get_sprite("spr_tenna_pose_podium_evil") : scr_84_get_sprite("spr_tenna_pose_podium");
+%%%
+
+
+
+=== gml_Object_obj_dw_ranking_t_screens_Draw_0
+---
+scr_84_get_font("8bit")
++++
+draw_set_font(scr_84_get_font("main"))
+%%%
+
+
+
+
+
+
+=== gml_Object_obj_initializer2_Create_0
+---
+scr_84_init_localization();
++++
+
+%%%
+
+---
+scr_load_audio();
++++
+scr_load_audio();
+scr_windowcaption();
+%%%
+
+---
+    if (sprite_exists(asset_get_index("spr_tvlandfont"))) {
+        global.tvlandfont = font_add_sprite_ext(spr_tvlandfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ.?!:…abcdefghijklmnopqrstuvwxyz1234567890", 0, 1);
+    }
++++
+
+%%%
+
+
+
+=== gml_Object_obj_initializer2_Other_72
+---
+scr_84_init_localization()
++++
+scr_init_localization()
+%%%
+
+---
+    if (sprite_exists(asset_get_index("spr_tvlandfont"))) {
+        global.tvlandfont = font_add_sprite_ext(spr_tvlandfont, "ABCDEFGHIJKLMNOPQRSTUVWXYZ.?!:…abcdefghijklmnopqrstuvwxyz1234567890", 0, 1);
+    }
++++
+
+%%%
+
+
+=== gml_Object_obj_ch3_GSA02_Step_0
+---
+star_text = (global.lang == "ja") ? spr_ja_funnytext_stars : spr_funnytext_star;
++++
+star_text = scr_84_get_sprite("spr_funnytext_star");
+%%%
+---
+
+---
+    if (global.lang == "en") {
+        c_var_instance(podium[2], "mystring", "RAL");
+    } else if (global.lang == "ja") {
+        c_var_instance(podium[2], "mystring", "ラルセ");
+    }
++++
+    c_var_instance(podium[2], "mystring", stringsetloc("RAL", "obj_ch3_GSA02_slash_Step_0_gml_313_0"));
+%%%
+
+---
+    if (global.lang == "en") {
+        c_var_instance(podium[1], "mystring", "ASS");
+    } else if (global.lang == "ja") {
+        c_var_instance(podium[1], "mystring", "クソダ");
+    }
++++
+    c_var_instance(podium[1], "mystring", stringsetloc("ASS", "obj_ch3_GSA02_slash_Step_0_gml_388_0"));
+%%%
+
+---
+    if (kris_name == "KRI")
+    {
+        reaction_state = 1;
+    }
+    else if (kris_name == "KRS")
+    {
+        reaction_state = 2;
+    }
+    else if (kris_name == "ASS" || kris_name == "PEE" || kris_name == "POO" || kris_name == "TIT" || kris_name == "BUT" || kris_name == "BUM" || kris_name == "クソダ")
+    {
+        reaction_state = 3;
+    }
+    else if (kris_name == "RAL" || kris_name == "SUS")
+    {
+        reaction_state = 4;
+    }
+    else if (kris_name == "FUC" || kris_name == "FUX" || kris_name == "FUK" || kris_name == "FCK")
+    {
+        reaction_state = 5;
+        setname = 1;
+    }
+    else if (kris_name == "AAA")
+    {
+        reaction_state = 6;
+    }
++++
+    if (array_includes(get_chapter_lang_setting("kri_word", ["KRI"]), kris_name))
+    {
+        reaction_state = 1;
+    }
+    else if (array_includes(get_chapter_lang_setting("krs_word", ["KRS"]), kris_name))
+    {
+        reaction_state = 2;
+    }
+    else if (array_includes(get_chapter_lang_setting("bad_word", ["ASS", "PEE", "POO", "TIT", "BUT", "BUM"]), kris_name))
+    {
+        reaction_state = 3;
+    }
+    else if (array_includes(get_chapter_lang_setting("other_name_word", ["RAL", "SUS"]), kris_name))
+    {
+        reaction_state = 4;
+    }
+    else if (array_includes(get_chapter_lang_setting("very_bad_word", ["FUC", "FUX", "FUK", "FCK"]), kris_name))
+    {
+        reaction_state = 5;
+        setname = 1;
+    }
+    else if (array_includes(get_chapter_lang_setting("aaa_word", ["AAA"]), kris_name))
+    {
+        reaction_state = 6;
+    }
+%%%
+
+---
+c_var_instance(podium[0], "mystring", "FUN");
++++
+c_var_instance(podium[0], "mystring", stringsetloc("FUN", "obj_ch3_GSA02_slash_Step_0_gml_591_0"));
+%%%
+
+
+=== gml_Object_obj_tensionbar_Draw_0
+---
+    draw_text(x - 28, y + 70, string_hash_to_newline(stringsetloc("M", "obj_tensionbar_slash_Draw_0_gml_25_0")));
+    draw_text(x - 24, y + 90, string_hash_to_newline(stringsetloc("A", "obj_tensionbar_slash_Draw_0_gml_26_0")));
+    draw_text(x - 20, y + 110, string_hash_to_newline(stringsetloc("X", "obj_tensionbar_slash_Draw_0_gml_27_0")));
++++
+    var TP_str = stringsetloc("MAX", "obj_tensionbar_slash_Draw_0_gml_1_0");
+    var xoff = 12 / string_length(TP_str);
+    
+    for (var i = 0; i < string_length(TP_str); i++)
+        draw_text(x - 16 - (xoff * (string_length(TP_str) - i)), y + 70 + (20 * i), string_char_at(TP_str, i + 1));
+%%%
+---
+
+=== gml_Object_obj_tenna_minigame_ui_Draw_0
+---
+    draw_set_font(fnt_mainbig);
+    
+    if (!i_ex(obj_tvturnoff_manager)) {
+        draw_text_color((camerax() + camerawidth()) - 70, cameray() + 10, "Ch" + string(_channelnumber), c_lime, c_lime, c_lime, c_lime, 1);
+    }
+}
++++
+    draw_set_font(scr_84_get_font("mainbig"));
+    draw_set_halign(fa_right);
+    
+    if (!i_ex(obj_tvturnoff_manager))
+        draw_text_color((camerax() + camerawidth()) - 22, cameray() + 10, stringsetsubloc("Ch~1", string(_channelnumber), "obj_tenna_minigame_ui_slash_Draw_0_gml_1_0"), c_lime, c_lime, c_lime, c_lime, 1);
+    
+    draw_set_halign(fa_left);
+}
+%%%
+
+---
+, "ENEMY"
++++
+, stringsetloc("ENEMY", "obj_tenna_minigame_ui_slash_Draw_0_gml_2_0")
+%%%
+---
+
+---
+, "SCORE"
++++
+, stringsetloc("SCORE", "obj_tenna_minigame_ui_slash_Draw_0_gml_3_0")
+%%%
+---
+
+---
+draw_text_transformed_color((camerax() + box_x) - 93, cameray() + box_y + 18, "MISS", 3, 2, 0, blend1, blend1, blend1, blend1, 1);
++++
+draw_set_halign(fa_right);
+draw_text_transformed_color((camerax() + box_x) - 4, cameray() + box_y + 18, stringsetloc("MISS", "obj_tenna_minigame_ui_slash_Draw_0_gml_4_0"), 3, 2, 0, blend1, blend1, blend1, blend1, 1);
+draw_set_halign(fa_left);
+%%%
+---
+
+
+
+=== gml_Object_obj_tenna_enemy_bg_Draw_0
+---
+, "SCORE"
++++
+, stringsetloc("SCORE", "obj_tenna_enemy_bg_slash_Draw_0_gml_0_0")
+%%%
+
+---
+, "bonus"
++++
+, stringsetloc("bonus", "obj_tenna_enemy_bg_slash_Draw_0_gml_1_0")
+%%%
+
+---
+, "bet"
++++
+, stringsetloc("bet", "obj_tenna_enemy_bg_slash_Draw_0_gml_2_0")
+%%%
+
+---
+, "GAME TIME!"
++++
+, stringsetloc("GAME TIME!", "obj_tenna_enemy_bg_slash_Draw_0_gml_3_0")
+%%%
+
+
+=== gml_Object_obj_shop_vending_Draw_0
+---
+"$" + string_hash_to_newline(string(global.gold))
++++
+stringsetsubloc("$~1", string_hash_to_newline(string(global.gold)), "obj_shop_vending_slash_Draw_0_gml_459_0")
+%%%
+
+---
+string_hash_to_newline("$" + string(global.gold))
++++
+stringsetsubloc("$~1", string(global.gold), "obj_shop_vending_slash_Draw_0_gml_460_0")
+%%%
+
+---
+string_hash_to_newline(string(global.flag[1044])) + " PTs"
++++
+stringsetsubloc("~1 PTs", string_hash_to_newline(string(global.flag[1044])), "obj_shop_vending_slash_Draw_0_gml_461_0")
+%%%
+
+=== gml_Object_obj_quizsequence_Draw_0
+---
+    var _tx = 332;
+    var _ty = board4 ? 140 : 194;
+    var _scale = scr_ease_in(clamp01(remap(0, 9, 1, 0, timer)), -1) + 1;
+    draw_text_transformed((1 + _tx) - (6 * _scale), _ty, string_hash_to_newline(quizstring), 3 * _scale, 3 * _scale, 0);
+    draw_text_transformed(1 + _tx, _ty - (6 * _scale), string_hash_to_newline(quizstring), 3 * _scale, 3 * _scale, 0);
+    draw_text_transformed(1 + _tx + (6 * _scale), _ty, string_hash_to_newline(quizstring), 3 * _scale, 3 * _scale, 0);
+    draw_text_transformed(1 + _tx, _ty + (6 * _scale), string_hash_to_newline(quizstring), 3 * _scale, 3 * _scale, 0);
+    draw_set_color(c_white);
+    draw_text_transformed(_tx, _ty, string_hash_to_newline(quizstring), 3 * _scale, 3 * _scale, 0);
++++
+    var _tx = 320;
+    var _ty = board4 ? 140 : 194;
+    var _scale = scr_ease_in(clamp01(remap(0, 9, 1, 0, timer)), -1) + 1;
+    var str_scale = min(3, 320 / string_width(quizstring))
+    draw_text_transformed((1 + _tx) - (6 * _scale * (str_scale / 3)), _ty, string_hash_to_newline(quizstring), str_scale * _scale, str_scale * _scale, 0);
+    draw_text_transformed(1 + _tx, _ty - (6 * _scale * (str_scale / 3)), string_hash_to_newline(quizstring), str_scale * _scale, str_scale * _scale, 0);
+    draw_text_transformed(1 + _tx + (6 * _scale * (str_scale / 3)), _ty, string_hash_to_newline(quizstring), str_scale * _scale, str_scale * _scale, 0);
+    draw_text_transformed(1 + _tx, _ty + (6 * _scale * (str_scale / 3)), string_hash_to_newline(quizstring), str_scale * _scale, str_scale * _scale, 0);
+    draw_set_color(c_white);
+    draw_text_transformed(_tx, _ty, string_hash_to_newline(quizstring), str_scale * _scale, 3 * _scale, 0);
+%%%
+
+=== gml_Object_obj_quiz_podium_Step_0
+---
+mystring = "RAL";
++++
+mystring = stringsetloc("RAL", "obj_ch3_GSA02_slash_Step_0_gml_313_0");
+%%%
+
+---
+mystring = "ASS";
++++
+mystring = stringsetloc("ASS", "obj_ch3_GSA02_slash_Step_0_gml_388_0");
+%%%
+
+=== gml_Object_obj_quiz_podium_Draw_0
+---
+if (global.lang == "en")
++++
+if (global.lang != "ja")
+%%%
+
+---
+draw_set_font(fnt_main);
++++
+draw_set_font(scr_84_get_font("main_mono"));
+%%%
+
+
+
+
+=== gml_Object_obj_gameshow_swordroute_Other_10
+---
+, "HP"
++++
+, stringsetloc("HP", "obj_gameshow_swordroute_slash_Other_10_gml_1_0")
+%%%
+
+---
+    draw_text(280, 48, "L");
+    draw_text(294, 48, "V");
+    draw_text(310, 48, string(_level));
++++
+    draw_set_halign(fa_right)
+    draw_text(326, 48, stringsetsubloc("LV~1", string(_level), "obj_gameshow_swordroute_slash_Other_10_gml_2_0"));
+    draw_set_halign(fa_left)
+%%%
+
+---
+    draw_text(278, 48, "MAX");
++++
+    draw_set_halign(fa_right)
+    draw_text(326, 48, stringsetloc("MAX", "obj_gameshow_swordroute_slash_Other_10_gml_3_0"));
+    barsize = maxbarsize;
+    draw_set_halign(fa_left)
+%%%
+

@@ -59,7 +59,7 @@ if (con == 3 && timer > 60)
     
     if (global.lang == "ja")
     {
-        revline = 1172;
+        revline = spr_smashreveal3_jp;
         bon = -10;
     }
     

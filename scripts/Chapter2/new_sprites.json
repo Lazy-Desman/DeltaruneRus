@@ -1,0 +1,14 @@
+{
+    "spr_pipissign": {
+        "frames_num": 1
+    },
+    "spr_rouxls_bubble_hey": {
+        "frames_num": 1
+    },
+    "spr_queen_poster": {
+        "width": 120,
+        "height": 64,
+        "frames_num": 3
+    }
+}
+

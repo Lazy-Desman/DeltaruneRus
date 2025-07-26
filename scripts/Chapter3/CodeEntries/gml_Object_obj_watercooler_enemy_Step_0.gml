@@ -304,9 +304,9 @@ if (global.myfight == 3)
         obj_herosusie.y = y;
         obj_heroralsei.x = x - 80;
         obj_heroralsei.y = y + 50;
-        scr_battle_sprite_set("kris", 4370, 0, true);
-        scr_battle_sprite_set("susie", 4275, 0, true);
-        scr_battle_sprite_set("ralsei", 4827, 0, true);
+        scr_battle_sprite_set("kris", spr_kris_zoosuit_cup, 0, true);
+        scr_battle_sprite_set("susie", spr_susie_zoosuit_cup, 0, true);
+        scr_battle_sprite_set("ralsei", spr_ralsei_zoosuit_cup, 0, true);
         msgsetloc(0, "* Everyone chatted around the watercooler./%", "obj_watercooler_enemy_slash_Step_0_gml_226_0");
         scr_battletext_default();
         acting = 3.1;

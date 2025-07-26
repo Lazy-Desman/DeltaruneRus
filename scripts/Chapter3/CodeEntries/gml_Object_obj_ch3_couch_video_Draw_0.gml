@@ -112,3 +112,5 @@ if (_video_status == 0)
         }
     }
 }
+
+gpu_set_texfilter(false);

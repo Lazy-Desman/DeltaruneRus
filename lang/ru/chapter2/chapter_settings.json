@@ -36,6 +36,9 @@
 		"spr_bnameralsei": {
 			"yoffset": 1
         },
+		"spr_bnamethrash": {
+			"xoffset": -5
+        },
 		"spr_hero_hp": {
 			"yoffset": 1
         },

@@ -6,6 +6,31 @@
   "gml_GlobalScript_scr_chefs": [
     "spr_tenna_grasp_chef"
   ],
+  "gml_Object_obj_tensionbar_Draw_0": [
+    "spr_tplogo"
+  ],
+  "gml_Object_obj_quizsequence_Draw_0": [
+    "spr_quiz_answer_cursor",
+    "spr_quiz_results"
+  ],
+  "gml_Object_obj_quizsequence_Step_0": [
+    "spr_tenna_sad",
+    "spr_tenna_grasp",
+    "spr_tenna_tie_adjust_b",
+    "spr_tenna_pose_podium",
+    "spr_tenna_pose",
+    "spr_tenna_point_at_screen",
+    "spr_tenna_laugh_pose",
+    "spr_tenna_nose_blossom",
+    "spr_tenna_point_up",
+    "spr_tenna_tie_adjust_a",
+    "spr_tenna_hooray_armsup",
+    "spr_tenna_tie_adjust_c",
+    "spr_tenna_whisper_blush",
+    "spr_tenna_laugh_pose_teeth",
+    "spr_tenna_pose_podium_evil",
+    "spr_tenna_point_up_b"
+  ],
   "gml_GlobalScript_scr_quizwipe": [
     "spr_dw_tv_tvtimeSign_quizwipe"
   ],
@@ -347,6 +372,9 @@
   "gml_Object_obj_face_Draw_0": [
     "spr_tenna_point_up",
     "spr_face_rurus_piratehat"
+  ],
+  "gml_Object_obj_ch3_GSA02_Step_0": [
+    "spr_tenna_pose_podium"
   ],
   "gml_Object_obj_ch3_GSA06_Step_0": [
     "spr_tenna_pose_podium",

@@ -1,6 +1,6 @@
 if (shakeobj == 0 || !i_ex(shakeobj))
 {
-    shakeobj = scr_marker_ext(0, 0, 412);
+    shakeobj = scr_marker_ext(0, 0, spr_pxwhite);
     
     with (shakeobj)
         visible = 0;
@@ -278,7 +278,7 @@ if (con >= 1)
             
             scr_delay_var("gradecon", 1, drumrolldelay);
             scr_delay_var("gradecon", 2, del);
-            snd_play_delay(90, del + 1, 1, 1);
+            snd_play_delay(snd_board_text_main_end, del + 1, 1, 1);
             snd_stop(snd_applause_single);
             snd_play(snd_drumroll);
             gradecon = 0.2;
@@ -562,7 +562,7 @@ if (con >= 1)
             
             scr_delay_var("gradecon", 1, drumrolldelay);
             scr_delay_var("gradecon", 2, del);
-            snd_play_delay(90, del + 1, 1, 1);
+            snd_play_delay(snd_board_text_main_end, del + 1, 1, 1);
             snd_stop(snd_applause_single);
             snd_play(snd_drumroll);
             gradecon = 0.2;
@@ -732,7 +732,7 @@ if (con >= 1)
             snd_play(snd_punchmed);
             
             if (tallestever)
-                snd_play_delay(453, 5, 1, 1);
+                snd_play_delay(snd_crowd_aah, 5, 1, 1);
         }
         
         if (rtimer > 14)
@@ -759,7 +759,7 @@ if (con >= 1)
             snd_play(snd_punchmed);
             
             if (foodwasted == 0)
-                snd_play_delay(453, 5, 1, 1);
+                snd_play_delay(snd_crowd_aah, 5, 1, 1);
         }
         
         if (rtimer > 28)
@@ -855,7 +855,7 @@ if (con >= 1)
             
             scr_delay_var("gradecon", 1, drumrolldelay);
             scr_delay_var("gradecon", 2, del);
-            snd_play_delay(90, del + 1, 1, 1);
+            snd_play_delay(snd_board_text_main_end, del + 1, 1, 1);
             snd_stop(snd_applause_single);
             snd_play(snd_drumroll);
             gradecon = 0.2;

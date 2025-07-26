@@ -46,7 +46,9 @@ else
         {
             scr_84_set_draw_font("mainbig")
             draw_set_color(c_white)
-            draw_text_ext(105, 120, stringsetloc("CHAPTER 2", "gml_Object_obj_intro_ch2_Draw_0_gml_1_0"), 10, 900)
+            draw_set_halign(fa_center)
+            draw_text_ext(160, 120, stringsetloc("CHAPTER 2", "gml_Object_obj_intro_ch2_Draw_0_gml_1_0"), 10, 900)
+            draw_set_halign(fa_left)
         }
         if (logotimer >= 160 + draw_timer)
             room_goto(PLACE_MENU)

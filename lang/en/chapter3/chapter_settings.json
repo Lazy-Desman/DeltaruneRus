@@ -1,5 +1,10 @@
 {
-    "sprites_settings": {},
+    "sprites_settings": {
+        "spr_amogus": {
+            "xoffset": 17,
+            "yoffset": 21
+        }
+    },
     "video_caption_times": [
         [0.02, 0.13],
         [0.22, 0.27],
@@ -26,8 +31,12 @@
     ],
     "its_tv_time_lights_xs": [0, 165, 210, 310],
     "tv_time_timestamps": [0, 1.2, 2, 2.85],
-    "additional_funny_words": [],
-    "additional_funny_sounds": [],
+    "additional_funny_words": [
+        "spr_amogus"
+    ],
+    "additional_funny_sounds": [
+        "snd_amogus"
+    ],
     "tvlangfont_string": "ABCDEFGHIJKLMNOPQRSTUVWXYZ.?!:…abcdefghijklmnopqrstuvwxyz1234567890",
     "translators_credits": [
         [

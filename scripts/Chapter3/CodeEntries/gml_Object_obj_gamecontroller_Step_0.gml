@@ -2,12 +2,24 @@ if global.translator_mode
 {
     if keyboard_check_released(ord("U"))
         global.translator_mode = 0
-    if speed_mode
-        room_speed = 120
-    if keyboard_check_released(ord("K"))
+    if (speed_mode > 0) {
+        switch (speed_mode) {
+            case (1): room_speed = 120; break;
+            case (2): room_speed = 360; break;
+            default: room_speed = 30; break;
+        }
+    }
+    if keyboard_check_released(ord("F"))
     {
-        speed_mode = (!speed_mode)
-        room_speed = 30
+        if (speed_mode > 0) {
+            speed_mode = 0
+            room_speed = 30
+        } else {
+            speed_mode = 1
+            if (keyboard_check(vk_shift)) {
+                speed_mode = 2
+            }
+        }
     }
     if (keyboard_check_released(ord("S")) && (!instance_exists(obj_savemenu)))
         instance_create(0, 0, obj_savemenu)

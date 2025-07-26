@@ -24,5 +24,12 @@
   ],
   "gml_Object_obj_dmgwriter_Draw_0": [
     "spr_battlemsg"
+  ],
+  "gml_Object_obj_npc_room_Create_0": [
+    "spr_blockler_o",
+    "spr_blockler_b"
+  ],
+  "gml_Object_obj_tensionbar_Draw_0": [
+    "spr_tplogo"
   ]
 }

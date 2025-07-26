@@ -12,6 +12,12 @@
         "origin_x": 0,
         "origin_y": 0,
         "frames_num": 1
+    },
+    "spr_board_lancercactus_help": {
+        "frames_num": 1
+    },
+    "spr_dw_ch3_b3bs_officesign_strip2": {
+        "frames_num": 1
     }
 }
 

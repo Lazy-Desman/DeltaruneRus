@@ -22,7 +22,6 @@
   "gml_Object_obj_npc_room_Create_0": [
     "spr_blockler_b",
     "spr_dw_mansion_toilet",
-    "spr_npc_plugboy",
     "spr_npc_plugboy_girl",
     "spr_npc_plugboy_hat",
     "spr_npc_plugboy_static",
@@ -31,7 +30,6 @@
   ],
   "gml_Object_obj_npc_room_Other_10": [
     "spr_blockler_b",
-    "spr_npc_plugboy",
     "spr_npc_plugboy_bandana",
     "spr_npc_plugboy_girl",
     "spr_npc_plugboy_hat",
@@ -46,24 +44,8 @@
     "spr_queenscreen"
   ],
   "gml_Object_obj_npc_musical_door_Create_0": [
-    "spr_npc_plugboy",
     "spr_npc_plugboy_bandana",
     "spr_npc_plugboy_static"
-  ],
-  "gml_Object_obj_queenscreen_Step_0": [
-    "spr_queenscreen"
-  ],
-  "gml_Object_obj_queenscreen_Draw_0": [
-    "spr_queenscreen"
-  ],
-  "gml_Object_obj_queenscreen_dance_Draw_0": [
-    "spr_queenscreen"
-  ],
-  "gml_Object_obj_virospear_Collision_obj_queenscreen": [
-    "spr_queenscreen"
-  ],
-  "gml_Object_obj_virospear_Collision_obj_queenscreen_dance": [
-    "spr_queenscreen"
   ],
   "gml_Object_obj_queenmansion_bg_Draw_0": [
     "spr_queenmansion_bg_middle"
@@ -161,14 +143,10 @@
   "gml_Object_obj_ch2_scene26_cityscape_Draw_0": [
     "spr_cutscene_27_tender_cancelled"
   ],
-  "gml_Object_obj_ch2_scene26_gigaqueen_Step_0": [
-    "spr_plugboy_spare"
-  ],
   "gml_Object_obj_ch2_room_cyber_maze_fireworks_Step_0": [
     "spr_queenscreen"
   ],
   "gml_Object_obj_ch2_room_city_savepoint_Create_0": [
-    "spr_npc_plugboy",
     "spr_npc_plugboy_bandana"
   ],
   "gml_Object_obj_ch2_castle_tutorial_Create_0": [
@@ -184,7 +162,6 @@
     "spr_mansion_floor_sign"
   ],
   "gml_Object_obj_ch2_room_cyber_shop_Create_0": [
-    "spr_npc_plugboy",
     "spr_npc_plugboy_bandana"
   ],
   "gml_Object_obj_ch2_room_castle_dojo_Create_0": [

@@ -1,0 +1,89 @@
+{
+    "fnt_8bit": [
+        "gml_GlobalScript_scr_shop_space_display",
+        "gml_Object_obj_b2s_northernlightsroom_Draw_0",
+        "gml_Object_obj_b2westshop_Draw_0",
+        "gml_Object_obj_board_grayregion_Draw_0",
+        "gml_Object_obj_board_scoreboard_Draw_0",
+        "gml_Object_obj_chefs_game_Draw_0",
+        "gml_Object_obj_dw_gameshow_screen_Draw_0",
+        "gml_Object_obj_dw_points_get_display_Draw_0",
+        "gml_Object_obj_dw_teevie_tvtest_Draw_0",
+        "gml_Object_obj_gameshow_battlemanager_Draw_0",
+        "gml_Object_obj_gameshow_swordroute_Other_10",
+        "gml_Object_obj_gameshow_ui_scorebox_Draw_0",
+        "gml_Object_obj_GSA02_B0_Draw_0",
+        "gml_Object_obj_quizsequence_Draw_0",
+        "gml_Object_obj_susiezilla_perfect_chain_letter_Draw_0",
+        "gml_Object_obj_tenna_enemy_bg_Draw_0",
+        "gml_Object_obj_quizsequence_Draw_0",
+        "gml_Object_obj_swordroute_consolestarter_Draw_0"
+    ],
+    "fnt_mainbig": [
+        "gml_Object_obj_board_spinner_Draw_0",
+        "gml_Object_obj_ch3_GSC05_susiezilla_tutorial_Draw_0",
+        "gml_Object_obj_chefs_customer_Draw_0",
+        "gml_Object_obj_chefs_scoretxt_Draw_0",
+        "gml_Object_obj_chefs_toggles_Draw_0",
+        "gml_Object_obj_elnina_bouncingbullet_Draw_0",
+        "gml_Object_obj_gif_analyzer_Draw_0",
+        "gml_Object_obj_intro_ch3_Draw_0",
+        "gml_Object_obj_rouxls_annyoing_dog_controller_Draw_0",
+        "gml_Object_obj_shootout_controller_Draw_64",
+        "gml_Object_obj_tenna_enemy_minigametext_Draw_0",
+        "gml_Object_obj_tenna_minigame_ui_Draw_0",
+        "gml_Object_obj_title_placeholder_Draw_0"
+    ],
+    "fnt_main": [
+        "gml_GlobalScript_scr_board_objname",
+        "gml_GlobalScript_scr_rhythmgame_draw",
+        "gml_GlobalScript_scr_shop_space_display",
+        "gml_Object_DEVICE_MENU_Draw_0",
+        "gml_Object_obj_board_quizwheel_Draw_0",
+        "gml_Object_obj_board_wheel_Draw_0",
+        "gml_Object_obj_dw_chef_screen_empty_Draw_0",
+        "gml_Object_obj_dw_countdown_Draw_0",
+        "gml_Object_obj_dw_ranking_hub_sign_Draw_0",
+        "gml_Object_obj_dw_teevie_susiezilla_Draw_0",
+        "gml_Object_obj_elnina_lanino_controller_Draw_0",
+        "gml_Object_obj_elnina_lanino_rematch_controller_Draw_0",
+        "gml_Object_obj_gameshow_nameentry_Draw_0",
+        "gml_Object_obj_podium_Draw_0",
+        "gml_Object_obj_shootout_controller_Draw_64",
+        "gml_Object_obj_shootout_text_Draw_0",
+        "gml_Object_obj_snd_maker_Draw_0",
+        "gml_Object_obj_tenna_minigame_ui_Draw_0",
+        "gml_Object_obj_time_Draw_64",
+        "gml_Object_obj_title_placeholder_Draw_0",
+        "gml_Object_obj_umbrella_tv_Draw_0"
+    ],
+    "fnt_dotumche": [
+        "gml_Object_obj_couchwriter_Draw_0",
+        "gml_Object_obj_fusionmenu_Draw_0",
+        "gml_Object_obj_tennatalkbubble_Draw_0"
+    ],
+    "fnt_small": [
+        "gml_GlobalScript_scr_board_objname",
+        "gml_Object_obj_b2_ninfriendo_wiremanagement_Draw_73",
+        "gml_Object_obj_board_swordroute_loop_counter_Draw_0",
+        "gml_Object_obj_bullettester_enemy_Draw_0",
+        "gml_Object_obj_bullettester_enemy_new_Draw_0",
+        "gml_Object_obj_caterpillar_board_Draw_64",
+        "gml_Object_obj_gameshow_swordroute_Other_10",
+        "gml_Object_obj_mainchara_board_Draw_0",
+        "gml_Object_obj_mainchara_Draw_0",
+        "gml_Object_obj_overworldc_Draw_0",
+        "gml_Object_obj_pushableblock_board_Draw_0",
+        "gml_Object_obj_room_console_room_Draw_0",
+        "gml_Object_obj_title_placeholder_Draw_0",
+        "gml_Object_obj_treasure_room_Draw_0"
+    ],
+    "fnt_comicsans": [
+        "gml_Object_obj_susiezilla_singlescreen_hud_score_Draw_0",
+        "gml_Object_obj_susiezilla_singlescreen_hud_time_counter_Draw_0",
+        "gml_Object_obj_susiezilla_singlescreen_shadowguy_laser_machine_Draw_0",
+        "gml_Object_obj_susiezilla_singlescreen_shadowguy_parent_Draw_73"
+    ]
+}
+
+

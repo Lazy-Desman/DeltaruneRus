@@ -1,5 +1,5 @@
 screen_alpha = 1;
-current_screen = 2980;
+current_screen = spr_gameshow_screen_theend;
 screen_state = "default";
 current_screen_state = screen_state;
 screen_sub_state = "";

@@ -1,4 +1,5 @@
 {
+    "DEVICE_MENU_slash_Draw_0_gml_202_0": "DELTARUNE ~1 (C) Toby Fox 2018-2025 ",
     "DEVICE_MENU_slash_Create_0_gml_97_0": "[EMPTY]",
     "DEVICE_MENU_slash_Step_0_gml_105_0": "[EMPTY]",
     "DEVICE_MENU_slash_Draw_0_gml_223_0": "Please select a file.",
@@ -43,7 +44,6 @@
     "DEVICE_MENU_slash_Step_0_gml_127_0": "Erase complete.",
     "DEVICE_NAMER_slash_Draw_0_gml_18_0": "ENTER YOUR OWN NAME.",
     "DEVICE_NAMER_slash_Draw_0_gml_84_0": "THIS IS YOUR NAME.",
-    "DEVICE_NAMER_slash_Draw_0_gml_00_0": "GASTER",
     "obj_legend_slash_Draw_0_gml_13_0": "Once upon a time, a LEGEND&was whispered among shadows.",
     "obj_legend_slash_Draw_0_gml_21_0": "It was&a LEGEND&of HOPE.",
     "obj_legend_slash_Draw_0_gml_24_0": "It was&a LEGEND&of DREAMS.",
@@ -7367,7 +7367,6 @@
     "obj_treasure_room_slash_Other_10_gml_76_0": "* (\\cY~1\\cW was added to your \\cY~2\\cW.)",
     "obj_treasure_room_slash_Other_10_gml_65_0": "* (You opened the treasure chest.^1)&* (Inside was \\cY~1\\cW.)/",
     "scr_itemget_anytype_text_slash_scr_itemget_anytype_text_gml_52_0": " Dark Dollars",
-    "scr_itemget_anytype_text_slash_scr_itemget_anytype_text_gml_52_1": " Dark Dollar",
     "scr_itemget_anytype_text_slash_scr_itemget_anytype_text_gml_36_0": "ITEMs",
     "scr_itemget_anytype_text_slash_scr_itemget_anytype_text_gml_38_0": "STORAGE",
     "scr_itemget_anytype_text_slash_scr_itemget_anytype_text_gml_51_0": "MONEY HOLE",
@@ -7452,10 +7451,6 @@
     "scr_recruit_info_all_slash_scr_recruit_info_all_gml_46_0": "Not yet fully recruited",
     "scr_recruit_info_all_slash_scr_recruit_info_all_gml_47_0": "?",
     "scr_recruit_info_all_slash_scr_recruit_info_all_gml_48_0": "?",
-    "obj_tensionbar_slash_Draw_0_gml_18_0": "%",
-    "obj_tensionbar_slash_Draw_0_gml_25_0": "M",
-    "obj_tensionbar_slash_Draw_0_gml_26_0": "A",
-    "obj_tensionbar_slash_Draw_0_gml_27_0": "X",
     "obj_battlecontroller_slash_Draw_0_gml_173_0": "HP",
     "obj_battlecontroller_slash_Draw_0_gml_208_0": "MERCY",
     "obj_battlecontroller_slash_Draw_0_gml_172_0": "Standard",
@@ -9082,7 +9077,6 @@
     "DEVICE_FAILURE_slash_Step_0_gml_104_0": "GIVE UP",
     "DEVICE_FAILURE_slash_Step_0_gml_103_0": "\\M0 THEN THE WORLD^5 & WAS COVERED^5 & IN DARKNESS./%",
     "obj_boxing_loss_controller_slash_Draw_0_gml_116_0": "Don't give up...!",
-
     "obj_credits_slash_Step_0_gml_21_0": "DELTARUNE",
     "obj_credits_slash_Step_0_gml_22_0": "Chapter 2",
     "obj_credits_slash_Step_0_gml_23_0": " ",
@@ -9097,7 +9091,7 @@
     "obj_credits_2_slash_Step_0_gml_34_0": " ",
     "obj_credits_2_slash_Step_0_gml_42_0": "-Main Team-",
     "obj_credits_2_slash_Step_0_gml_43_0": "Sarah O'Donnell",
-    "obj_credits_2_slash_Step_0_gml_44_0": "Taxiderby",
+    "obj_credits_2_slash_Step_0_gml_44_0": "Juju (Taxiderby)",
     "obj_credits_2_slash_Step_0_gml_45_0": "Fred Wood",
     "obj_credits_2_slash_Step_0_gml_46_0": "Jean Canellas",
     "obj_credits_2_slash_Step_0_gml_47_0": "Xan Wetherall",
@@ -9157,8 +9151,8 @@
     "obj_credits_2_slash_Step_0_gml_194_0": "-Translator-",
     "obj_credits_2_slash_Step_0_gml_195_0": "Keiko Fukuichi",
     "obj_credits_2_slash_Step_0_gml_196_0": " ",
-    "obj_credits_2_slash_Step_0_gml_197_0": " ",
-    "obj_credits_2_slash_Step_0_gml_198_0": " ",
+    "obj_credits_2_slash_Step_0_gml_197_0": "-Deltranslate Creator-",
+    "obj_credits_2_slash_Step_0_gml_198_0": "Neprim",
     "obj_credits_2_slash_Step_0_gml_211_0": "-Localization Producers-",
     "obj_credits_2_slash_Step_0_gml_212_0": "Graeme Howard",
     "obj_credits_2_slash_Step_0_gml_213_0": "John Ricciardi",
@@ -9217,19 +9211,43 @@
     "obj_credits_2_slash_Step_0_gml_344_0": " ",
     "obj_credits_2_slash_Step_0_gml_345_0": " ",
     "obj_credits_2_slash_Step_0_gml_346_0": " ",
-
     "DEVICE_MENU_slash_Draw_0_gml_290_0": "CHAPTER ",
-    "DEVICE_MENU_slash_Draw_0_gml_289_0": "DELTARUNE, Chapter ",
     "obj_ch2_keyboardpuzzle_tile_Create_0_gml_1_0": "APEAPL",
     "obj_ch2_keyboardpuzzle_tile_Create_0_gml_2_0": "GA2AAREAE2GAEALA",
-    "DEVICE_CHOICE_slash_User_0_gml_1_0": "(B)BACK",
-    "DEVICE_CHOICE_slash_User_0_gml_2_0": "(E)END",
-    "DEVICE_MENU_slash_Draw_0_gml_286_0": "Special: ",
-    "DEVICE_MENU_slash_Draw_0_gml_287_0": "Special 1",
-    "DEVICE_MENU_slash_Draw_0_gml_288_0": "Special 2",
     "obj_tensionbar_slash_Draw_0_gml_28_0": "X",
-    "scr_monstersetup_slash_scr_monstersetup_gml_1166_0": "K_К",
+    "scr_monstersetup_slash_scr_monstersetup_gml_1166_0": "K_K",
     "gml_Object_obj_intro_ch2_Draw_0_gml_1_0": "CHAPTER 2",
+    "obj_chapter_continue_slash_Create_0_gml_1_0": "Начать главу ~1",
+    "obj_chapter_continue_slash_Create_0_gml_2_0": "Вернуться к главе ~1",
+    "scr_windowcaption_0_0": "DELTARUNE, Chapter ",
+    "DEVICE_MENU_slash_Draw_0_gml_228_0": "Settings",
+    "obj_lang_settings_1_0": "LANGUAGE CONFIG",
+    "obj_lang_settings_2_0": "Return",
+    "obj_lang_settings_3_0": "Yes",
+    "obj_lang_settings_4_0": "No",
+    "obj_lang_settings_5_0": "Language",
+    "obj_lang_settings_6_0": "Special Mode",
+    "obj_lang_settings_7_0": "Translated OSTs",
+    "obj_lang_settings_8_0": "Special Mode disabled description (leave space if no need)",
+    "obj_lang_settings_9_0": "Special Mode enabled description (leave space if no need)",
+    "scr_84_name_input_setup_0_0": "ABCDEFGHIJ",
+    "scr_84_name_input_setup_0_1": "KLMNOPQRST",
+    "scr_84_name_input_setup_0_2": "UVWXYZ%<%<",
+    "scr_84_name_input_setup_1_0": "(B)BACK",
+    "scr_84_name_input_setup_2_0": "(E)END",
+    "PROCESS_DOG_Create_0_0": "DOGTARUNE",
+    "DEVICE_NAMER_slash_Draw_0_gml_00_0": "GASTER",
+    "obj_fusionmenu_slash_Draw_0_gml_158_0": "POCKET",
+    "obj_fusionmenu_slash_Draw_0_gml_160_0": "STORAGE",
+    "obj_tensionbar_slash_Draw_0_gml_0_0": "%",
+    "obj_tensionbar_slash_Draw_0_gml_1_0": "MAX",
+    "obj_battlecontroller_slash_Draw_0_gml_0_0": "% TP",
+    "obj_shop1_slash_Draw_0_gml_1_0": "~1$",
+    "obj_moneydisplay_Draw_0_gml_1_0": "~1$",
+    "obj_shop_ch2_music_Draw_0_gml_1_0": "~1$",
+    "obj_shop_ch2_swatch_Draw_0_gml_1_0": "~1$",
+    "obj_shop2_slash_Draw_0_gml_1_0": "~1$",
+    "scr_itemget_anytype_text_slash_scr_itemget_anytype_text_gml_52_1": " Dark Dollar",
     "UNUSED_slash_UNUSED_gml_1_0": "No one can hear me, can they...?",
     "UNUSED_slash_UNUSED_gml_2_0": "...",
     "UNUSED_slash_UNUSED_gml_3_0": "I guess not.",
@@ -11461,45 +11479,6 @@
     "obj_ralseithrown_slash_Step_0_gml_23_0": "* Missed!/%",
     "obj_ralseithrown_slash_Collision_ac806612_bd9d_43f5_86b2_61306f514c9f_gml_6_0": "* The crown greatly loosened!/%",
     "obj_ralseithrown_slash_Collision_ac806612_bd9d_43f5_86b2_61306f514c9f_gml_29_0": "* The crown loosened a little!/%",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     "scr_encountersetup_slash_scr_encountersetup_gml_98_0": "* Rudinn drew near!",
     "scr_encountersetup_slash_scr_encountersetup_gml_99_0": "* A different Rudinn from last time drew near!",
     "scr_encountersetup_slash_scr_encountersetup_gml_100_0": "* Assumedly another different Rudinn appeared!",
