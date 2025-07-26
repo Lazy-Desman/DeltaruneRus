@@ -359,32 +359,40 @@ if (File.Exists(scriptFolder + "CodeUpdates.json"))
     jsonCodeUpdates = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, List<Dictionary<string, string>>>>(json);
 }
 
-var codeChanges = new Dictionary<string, List<(string, string)>>();
+var codeChanges = new Dictionary<string, List<(string, string, bool)>>();
 if (File.Exists(scriptFolder + "CodeChanges.txt")) {
     var changes = File.ReadAllLines(scriptFolder + "CodeChanges.txt");
     var cur_code = "";
     var cur_from = "";
     var cur_to = "";
     int flag = 0;
+    bool flag_ignore = false;
     foreach (var str in changes)
     {
         if (str.StartsWith("==="))
         {
             cur_code = str.Substring(4);
-            codeChanges[cur_code] = new List<(string, string)>();
+            codeChanges[cur_code] = new List<(string, string, bool)>();
             flag = 0;
         }
         else
         if (str.StartsWith("---"))
+        {
             flag = 1;
+            if (str.Length > 3 && str[3] == '#')
+            {
+                flag_ignore = true;
+            }
+        }
         else if (str.StartsWith("+++"))
             flag = 2;
         else if (str.StartsWith("%%%"))
         {
             flag = 0;
-            codeChanges[cur_code].Add((cur_from.Remove(cur_from.Length - 1), cur_to.Remove(cur_to.Length - 1)));
+            codeChanges[cur_code].Add((cur_from.Remove(cur_from.Length - 1), cur_to.Remove(cur_to.Length - 1), flag_ignore));
             cur_from = "";
             cur_to = "";
+            flag_ignore = false;
         }
         else
         if (flag == 1)
@@ -436,7 +444,7 @@ await Task.Run(() =>
             from = Regex.Escape(from);
             from = from.Replace(" ", @"\s*").Replace("\\\\", "\\");
             from = from.Replace("{", "{?").Replace("}", "}?");
-            if (!ReplacePart(codeName, from, change.Item2))
+            if (!ReplacePart(codeName, from, change.Item2) && !change.Item3)
             {
                 ScriptMessage(codeName + "\n" + change.Item1);
             }

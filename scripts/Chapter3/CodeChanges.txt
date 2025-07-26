@@ -99,6 +99,15 @@ _ranking = "S"
 _ranking = stringsetloc("S", "scr_get_rank_letter_slash_scr_get_rank_letter_gml_5_1")
 %%%
 
+=== gml_Object_obj_screen_channel_change_Create_0
+---#
+screen_surf = 0;
+old_screen_surf = 0;
++++
+screen_surf = -4;
+old_screen_surf = -4;
+%%%
+
 
 
 === gml_Object_obj_dbulletcontroller_Step_0
