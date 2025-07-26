@@ -1,6 +1,6 @@
 scr_board_battlehealth();
 depth = 100010;
-kris = spr_kris_quiz_cough;
+kris = obj_mainchara;
 
 with (obj_caterpillarchara)
 {
