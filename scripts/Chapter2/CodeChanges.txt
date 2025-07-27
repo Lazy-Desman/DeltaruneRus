@@ -140,7 +140,7 @@ bulletletter = stringsetloc("$", "obj_spamton_wordbullet_Create_0_gml_1_0")
 ---
 px = (global.lang == "en") ? scr_marker(0, 0, bg_library) : scr_marker(0, 0, bg_lang_ja_library);
 +++
-px = scr_84_get_sprite("bg_library")
+px = scr_marker(0, 0, scr_84_get_sprite("bg_library"));
 %%%
 
 
