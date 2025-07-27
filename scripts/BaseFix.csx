@@ -164,6 +164,11 @@ void GetOrig(string codeName)
     var code = Data.Code.ByName(codeName);
     var oldCode = Data.Code.ByName(codeName + "_old");
 
+    if (code == null)
+    {
+        throw new Exception(string.Format("Отсутствует такой кусок кода как \"{0}\". Почему?", codeName));
+    }
+
     if (oldCode == null)
     {
         oldCode = new UndertaleCode();
@@ -477,27 +482,34 @@ await Task.Run(() =>
 #region Внедрение спрайтов и звуков
 
 
-Dictionary<string, string> jsonSpritesAssgned;
-Dictionary<string, List <string> > jsonObjSprDraws;
-Dictionary<string, List<Dictionary<string, string>>> jsonRooms;
-Dictionary<string, List <string> > jsonObjSounds;
+var jsonSpritesAssgned = new Dictionary<string, string>();
+var jsonObjSprDraws = new Dictionary<string, List <string>>();
+var jsonRooms = new Dictionary<string, List<Dictionary<string, string>>>();
+var jsonObjSounds = new Dictionary<string, List <string>>();
 
-using (StreamReader r = new StreamReader(scriptFolder + "ObjectsWithAssignedSprites.json")) {
+if (File.Exists(scriptFolder + "ObjectsWithAssignedSprites.json"))
+{
+    using StreamReader r = new StreamReader(scriptFolder + "ObjectsWithAssignedSprites.json");
     string json = r.ReadToEnd();
     jsonSpritesAssgned = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, string>>(json);
 }
-using (StreamReader r = new StreamReader(scriptFolder + "CodesWithSprites.json")) {
-    string json = r.ReadToEnd();
-    jsonObjSprDraws = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, List <string>>>(json);
-}
-using (StreamReader r = new StreamReader(scriptFolder + "RoomsWithBacksLayers.json"))
+if (File.Exists(scriptFolder + "CodesWithSprites.json"))
 {
+    using StreamReader r = new StreamReader(scriptFolder + "CodesWithSprites.json");
+    string json = r.ReadToEnd();
+    jsonObjSprDraws = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, List<string>>>(json);
+}
+if (File.Exists(scriptFolder + "RoomsWithBacksLayers.json"))
+{
+    using StreamReader r = new StreamReader(scriptFolder + "RoomsWithBacksLayers.json");
     string json = r.ReadToEnd();
     jsonRooms = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, List<Dictionary<string, string>>>>(json);
 }
-using (StreamReader r = new StreamReader(scriptFolder + "CodesWithSounds.json")) {
+if (File.Exists(scriptFolder + "RoomsWithBacksLayers.json"))
+{
+    using StreamReader r = new StreamReader(scriptFolder + "CodesWithSounds.json");
     string json = r.ReadToEnd();
-    jsonObjSounds = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, List <string>>>(json);
+    jsonObjSounds = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, List<string>>>(json);
 }
 
 maxCount = jsonObjSprDraws.Count + jsonSpritesAssgned.Count + jsonRooms.Count + jsonObjSounds.Count;

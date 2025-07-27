@@ -259,25 +259,25 @@ scr_init_localization()
 ---
     itemname = armornametemp;
 +++
-    itemname = scr_item_localized_name_acc(t_itemid, 1);
+    itemname = scr_item_localized_name_acc(_itemid, 1);
 %%%
 
 ---
     itemname = weaponnametemp;
 +++
-    itemname = scr_item_localized_name_acc(t_itemid, 2);
+    itemname = scr_item_localized_name_acc(_itemid, 2);
 %%%
 
 ---
     itemname = itemnameb;
 +++
-    itemname = scr_item_localized_name_acc(t_itemid, 0);
+    itemname = scr_item_localized_name_acc(_itemid, 0);
 %%%
 
 ---
     itemname = tempkeyitemname;
 +++
-    itemname = scr_item_localized_name_acc(t_itemid, 3);
+    itemname = scr_item_localized_name_acc(_itemid, 3);
 %%%
 
 ---
