@@ -24,6 +24,12 @@
         "spr_dw_tv_time_funnytext",
         "spr_funnytext_tv_time"
     ],
+    "gml_Object_obj_dw_teevie_tv_screens_treasure_Draw_0": [
+        "spr_dw_teevie_tv_shows"
+    ],
+    "gml_Object_obj_dw_teevie_tv_screens_Draw_0": [
+        "spr_dw_teevie_tv_shows"
+    ],
     "gml_Object_obj_ch3_GSA04_Step_0": [
         "spr_funnytext_big"
     ],

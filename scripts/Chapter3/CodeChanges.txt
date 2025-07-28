@@ -404,10 +404,26 @@ var sprite_name = scr_84_get_sprite("spr_dw_ranking_door_" + arg0);
 
 
 === gml_Object_obj_dw_teevie_tv_screens_treasure_Step_0
----
+---#
 screen.set_screen_sprite(spr_dw_teevie_tv_shows);
 +++
 screen.set_screen_sprite(scr_84_get_sprite("spr_dw_teevie_tv_shows"));
+%%%
+
+
+=== gml_Object_obj_dw_teevie_tv_screens_treasure_Draw_0
+---#
+screensprite[i][j] = spr_dw_teevie_tv_shows;
++++
+screensprite[i][j] = scr_84_get_sprite("spr_dw_teevie_tv_shows");
+%%%
+
+
+=== gml_Object_obj_dw_teevie_tv_screens_Draw_0
+---#
+screensprite[i][j] = spr_dw_teevie_tv_shows;
++++
+screensprite[i][j] = scr_84_get_sprite("spr_dw_teevie_tv_shows");
 %%%
 
 

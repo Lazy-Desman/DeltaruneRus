@@ -156,17 +156,19 @@ string Decompile(string code)
     return Decompile(Data.Code.ByName(code));
 }
 
-void GetOrig(string codeName)
+bool GetOrig(string codeName)
 {
     if (backedList.Contains(codeName))
-        return;
+        return true;
 
     var code = Data.Code.ByName(codeName);
     var oldCode = Data.Code.ByName(codeName + "_old");
 
     if (code == null)
     {
-        throw new Exception(string.Format("Отсутствует такой кусок кода как \"{0}\". Почему?", codeName));
+        ScriptMessage(string.Format("Отсутствует такой кусок кода как \"{0}\". Это скорее всего связано со старой версией игры. Из-за этого могут возникнуть ошибки. А могут и не возникнуть.", codeName));
+        // throw new Exception(string.Format("Отсутствует такой кусок кода как \"{0}\". Почему?", codeName));
+        return false;
     }
 
     if (oldCode == null)
@@ -202,6 +204,8 @@ void GetOrig(string codeName)
     }
 
     backedList.Add(codeName);
+
+    return true;
 }
 
 void GetOrigSprite(string spriteName)
@@ -421,7 +425,8 @@ await Task.Run(() =>
 
     foreach (var code in codeEntrs)
     {
-        GetOrig(code.Item1);
+        if (!GetOrig(code.Item1))
+            continue;
         // ScriptMessage(code.Item1);
         // Data.Code.ByName(code.Item1).ReplaceGML(code.Item2, Data);
         ReplaceGML(Data.Code.ByName(code.Item1), code.Item2);
@@ -431,12 +436,14 @@ await Task.Run(() =>
 
     foreach (var code in codesWithSpritesIds)
     {
-        GetOrig(code.Key);
+        if (!GetOrig(code.Key))
+            continue;
+            
         foreach (var spr in code.Value)
         {
             if (!ReplacePart(code.Key, Data.Sprites.IndexOf(Data.Sprites.ByName(spr)).ToString(), spr))
             {
-                ScriptMessage(string.Format("Ошибка при изменении айдишника \"{0}\" в \"{1}\".", spr, code.Key));
+                // ScriptMessage(string.Format("Ошибка при изменении айдишника \"{0}\" в \"{1}\".", spr, code.Key));
             }
         }
 
@@ -446,7 +453,8 @@ await Task.Run(() =>
 
     foreach (var codeName in codeChanges.Keys)
     {
-        GetOrig(codeName);
+        if (!GetOrig(codeName))
+            continue;
 
         foreach (var change in codeChanges[codeName])
         {
