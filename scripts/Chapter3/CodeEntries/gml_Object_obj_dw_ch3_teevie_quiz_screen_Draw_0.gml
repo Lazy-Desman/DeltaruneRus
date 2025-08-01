@@ -1,8 +1,7 @@
 var dblue = 9791488;
 
-
-var let_a = stringsetloc("A", "obj_dw_ch3_teevie_quiz_screen_slash_Draw_0_gml_1_0")
-var let_b = stringsetloc("B", "obj_dw_ch3_teevie_quiz_screen_slash_Draw_0_gml_2_0")
+var let_a = stringsetloc("A", "obj_dw_ch3_teevie_quiz_screen_slash_Draw_0_gml_1_0");
+var let_b = stringsetloc("B", "obj_dw_ch3_teevie_quiz_screen_slash_Draw_0_gml_2_0");
 if (mode == 0)
 {
     event_inherited();
@@ -46,7 +45,7 @@ else if (mode == 1)
         var _tx = x + 260;
         var _ty = y + 130;
         var _scale = scr_ease_in(clamp01(remap(0, word_max_scale, 1, 0, word_scale_timer)), -1) + 1;
-        var str_scale = min(3, 360 / string_width(quizstring))
+        var str_scale = min(3, 360 / string_width(quizstring));
         draw_set_color(dblue);
         draw_text_transformed(_tx, _ty + 2, string_hash_to_newline(quizstring), str_scale * _scale, str_scale * _scale, 0);
         draw_text_transformed(_tx + 2, _ty + 2, string_hash_to_newline(quizstring), str_scale * _scale, str_scale * _scale, 0);
@@ -79,7 +78,7 @@ else if (mode == 1)
         var _tx = x + 260;
         var _ty = y + 130;
         var _scale = scr_ease_in(clamp01(remap(0, word_max_scale, 1, 0, word_scale_timer)), -1) + 1;
-        var str_scale = min(3, 360 / string_width(quizstring))
+        var str_scale = min(3, 360 / string_width(quizstring));
         draw_set_color(dblue);
         draw_text_transformed(_tx, _ty + 2, string_hash_to_newline(quizstring), str_scale * _scale, str_scale * _scale, 0);
         draw_text_transformed(_tx + 2, _ty + 2, string_hash_to_newline(quizstring), str_scale * _scale, str_scale * _scale, 0);
@@ -353,17 +352,30 @@ else if (mode == 1)
                 draw_sprite_ext(spr_dw_teevie_tv_static, screen_anim, x + (i * tvwidth), y + (j * tvheight), 2, 2, image_angle, c_white, image_alpha);
         }
     }
-    
-    for (var i = 0; i < array_length(_screen_list); i++)
-    {
-        var screen = _screen_list[i];
-        var screen_tile_pos = screen.get_tile_pos();
-        var screen_tile_x = screen_tile_pos.x;
-        var screen_tile_y = screen_tile_pos.y;
-        draw_sprite_ext(tvbasesprite, 4, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, c_white, 0.65);
-        draw_sprite_ext(tvbasesprite, 1, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, merge_color(tvbasecolor, screen.get_screen_color(), 0.6 + (sin((timer / 4) + screen_tile_x + screen_tile_y) * 0.1)), image_alpha);
-        draw_sprite_ext(tvbasesprite, 2, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, merge_color(tvbasecolor, c_black, 0.5), image_alpha);
-        draw_sprite_ext(tvbasesprite, 3, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, tvbasecolor, image_alpha);
-        draw_sprite_ext(tvbasesprite, 5, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, c_white, image_alpha);
+    if (!variable_instance_exists(id, "_screen_list")) {
+        for (var i = 0; i < width; i++)
+        {
+            for (var j = 0; j < height; j++)
+            {
+                draw_sprite_ext(tvbasesprite, 4, x + (i * tvwidth), y + (j * tvheight), image_xscale, image_yscale, image_angle, c_white, 0.65);
+                draw_sprite_ext(tvbasesprite, 1, x + (i * tvwidth), y + (j * tvheight), image_xscale, image_yscale, image_angle, merge_color(tvbasecolor, screencolor[i][j], 0.6 + (sin((timer / 4) + i + j) * 0.1)), image_alpha);
+                draw_sprite_ext(tvbasesprite, 2, x + (i * tvwidth), y + (j * tvheight), image_xscale, image_yscale, image_angle, merge_color(tvbasecolor, c_black, 0.5), image_alpha);
+                draw_sprite_ext(tvbasesprite, 3, x + (i * tvwidth), y + (j * tvheight), image_xscale, image_yscale, image_angle, tvbasecolor, image_alpha);
+                draw_sprite_ext(tvbasesprite, 5, x + (i * tvwidth), y + (j * tvheight), image_xscale, image_yscale, image_angle, c_white, image_alpha);
+            }
+        }
+    } else {
+        for (var i = 0; i < array_length(_screen_list); i++)
+        {
+            var screen = _screen_list[i];
+            var screen_tile_pos = screen.get_tile_pos();
+            var screen_tile_x = screen_tile_pos.x;
+            var screen_tile_y = screen_tile_pos.y;
+            draw_sprite_ext(tvbasesprite, 4, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, c_white, 0.65);
+            draw_sprite_ext(tvbasesprite, 1, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, merge_color(tvbasecolor, screen.get_screen_color(), 0.6 + (sin((timer / 4) + screen_tile_x + screen_tile_y) * 0.1)), image_alpha);
+            draw_sprite_ext(tvbasesprite, 2, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, merge_color(tvbasecolor, c_black, 0.5), image_alpha);
+            draw_sprite_ext(tvbasesprite, 3, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, tvbasecolor, image_alpha);
+            draw_sprite_ext(tvbasesprite, 5, x + (screen_tile_x * tvwidth), y + (screen_tile_y * tvheight), image_xscale, image_yscale, image_angle, c_white, image_alpha);
+        }
     }
 }

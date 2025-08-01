@@ -386,7 +386,8 @@ if (File.Exists(scriptFolder + "CodeChanges.txt")) {
         if (str.StartsWith("==="))
         {
             cur_code = str.Substring(4);
-            codeChanges[cur_code] = new List<(string, string, bool)>();
+            if (!codeChanges.ContainsKey(cur_code))
+                codeChanges[cur_code] = new List<(string, string, bool)>();
             flag = 0;
         }
         else
