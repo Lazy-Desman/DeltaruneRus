@@ -328,6 +328,7 @@ if (obj_lang_settings == null) {
 
 // Режим переводчика
 Data.GameObjects.ByName("obj_gamecontroller").Visible = true;
+
 AddNewEvent("obj_gamecontroller", EventType.Draw, (uint)EventSubtypeDraw.DrawGUI, "");
 AddNewEvent("obj_gamecontroller", EventType.Step, (uint)EventSubtypeStep.Step, "");
 int maxCount = 0;

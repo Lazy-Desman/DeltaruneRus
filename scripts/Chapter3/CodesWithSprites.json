@@ -501,5 +501,12 @@
   "gml_Object_obj_susiezilla_statue_Draw_0": [
     "spr_tenna_point_up",
     "spr_susiezilla_ralsei_tower"
+  ],
+  "gml_Object_obj_ch3_GSA01G_Create_0": [
+    "spr_dw_tv_tvtimeSign_half",
+    "spr_dw_tv_mysterySign_half",
+    "spr_dw_tv_prize_curtain",
+    "spr_dw_tv_prize_talkback",
+    "spr_dw_tv_prize_gum"
   ]
 }

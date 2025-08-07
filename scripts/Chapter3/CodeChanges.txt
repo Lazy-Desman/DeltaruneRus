@@ -770,6 +770,37 @@ draw_set_font(scr_84_get_font("main_mono"));
 
 
 
+=== gml_Object_obj_ch3_PGS01F_Step_0
+---
+    global.choicemsg[0] = (global.lang == "ja") ? "#VTRを#スキップ" : "#Skip the#video";
+    global.choicemsg[1] = (global.lang == "ja") ? "#それでも#まだ見る" : "#Try and#watch anyway";
++++
+    global.choicemsg[0] = stringsetloc("#Skip the#video", "obj_ch3_PGS01F_slash_Step_0_gml_357_0");
+    global.choicemsg[1] = stringsetloc("#Try and#watch anyway", "obj_ch3_PGS01F_slash_Step_0_gml_358_0");
+%%%
+
+
+---
+    var prompt_text = (global.lang == "ja") ? "＊ おーっとぉ！&　 VTRの様子がおかしいぞ！/" : "* W-Wait^1! The VHS isn't working!/";
++++
+    var prompt_text = stringsetloc("* W-Wait^1! The VHS isn't working!/", "obj_ch3_PGS01F_slash_Step_0_gml_359_0");
+%%%
+
+
+
+
+
+=== gml_Object_obj_ch3_GSA01G_Create_0
+---
+var x_offset = (global.lang == "ja") ? -10 : 0;
++++
+var x_offset = 0;
+%%%
+
+
+
+
+
 === gml_Object_obj_gameshow_swordroute_Other_10
 ---
 , "HP"

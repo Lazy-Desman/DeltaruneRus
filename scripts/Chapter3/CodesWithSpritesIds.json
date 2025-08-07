@@ -79,5 +79,10 @@
     "gml_Object_obj_quizroom_Create_0": [
         "spr_tenna_pose_podium_evil",
         "spr_tenna_pose_podium"
+    ],
+    "gml_Object_obj_ch3_GSA01G_Create_0": [
+        "spr_dw_tv_prize_curtain",
+        "spr_dw_tv_prize_talkback",
+        "spr_dw_tv_prize_gum"
     ]
 }
