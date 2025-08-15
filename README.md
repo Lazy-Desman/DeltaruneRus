@@ -1,20 +1,24 @@
-**Русификатор для Дельта-руны от Ленивой выхухоли** 
-![Постер](https://m.gjcdn.net/content/1100/43609498-ll-umbvetcy-v4.webp)
+**Русификатор для Дельта-руны от Ленивой выхухоли**
+<!-- ![Постер](https://m.gjcdn.net/content/1100/43609498-ll-umbvetcy-v4.webp) -->
 
 **Локализация 1-3 глав от всеми любимой Ленивой выхухоли теперь и здесь!**
+
 **Насладитесь вашей любимой игрой на русском языке с полной локализацией текста, шуток, изображений и даже голосов!**
 
 ---
 
 **Присоединяйтесь к сообществу**
+
 Чтобы вместе ждать и обсуждать перевод следующих глав, вступайте в наш [Discord-сервер](https://discord.gg/7pDZRVBB3Y) и [Telegram-канал](https://t.me/lazydesman). Здесь вы всегда будете в курсе новостей и сможете напрямую пообщаться с нами. 
-<img src="https://m.gjcdn.net/content/600/41076092-ll-fjkiehgs-v4.webp" alt="Соцсети" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
+
+<!-- <img src="https://m.gjcdn.net/content/600/41076092-ll-fjkiehgs-v4.webp" alt="Соцсети" width="400" style="display: block; margin-left: auto; margin-right: auto;"/> -->
 
 **Если вам понравилась наша работа - [поддержите команду рублём](https://boosty.to/lazydesman/donate)!**
 
 ---
 
-<img src="https://m.gjcdn.net/content/600/40523497-ll-jsapkbmw-v4.webp" alt="Команда" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
+**Команда**
+<!-- <img src="https://m.gjcdn.net/content/600/40523497-ll-jsapkbmw-v4.webp" alt="Команда" width="400" style="display: block; margin-left: auto; margin-right: auto;"/> -->
 
 * Глава перевода (и по совместительству кодер): Неприм
 * Главный помогатор: DubstepDude
