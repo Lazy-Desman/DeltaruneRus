@@ -9,6 +9,7 @@
 ## **Присоединяйтесь к сообществу**
 Чтобы вместе ждать и обсуждать перевод следующих глав, вступайте в наш [Discord-сервер](https://discord.gg/7pDZRVBB3Y) и [Telegram-канал](https://t.me/lazydesman). Здесь вы всегда будете в курсе новостей и сможете напрямую пообщаться с нами. 
 <img src="https://m.gjcdn.net/content/600/41076092-ll-fjkiehgs-v4.webp" alt="Соцсети" width="400" style="display: block; margin-left: auto; margin-right: auto;"/>
+
 **Если вам понравилась наша работа - [поддержите команду рублём](https://boosty.to/lazydesman/donate)!**
 
 ---
