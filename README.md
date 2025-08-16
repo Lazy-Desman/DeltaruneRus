@@ -39,16 +39,16 @@
     * ricurn
 
 * — Перерисовка графики —
-    * тsnus
-    * тRey Ven
-    * тИван Сидоров
-    * тMelT
-    * тtaydanto
-    * тDubstepDude
-    * тpuskanyaww
-    * тCatptapathy
-    * тC-arth
-    * тSlavaWOW
+    * snus
+    * Rey Ven
+    * Иван Сидоров
+    * MelT
+    * taydanto
+    * DubstepDude
+    * puskanyaww
+    * Catptapathy
+    * C-arth
+    * SlavaWOW
 
 * — Бета-тестеры —
     * geniusfilmmaker
