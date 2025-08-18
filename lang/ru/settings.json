@@ -4,5 +4,7 @@
     "special_mode": true,
     "enable_translated_songs_switch": true,
     "monospace_fonts": false,
-    "limit_by_width": true
+    "time_zone": 3, 
+    "limit_by_width": true,
+    "files_url": "https://raw.githubusercontent.com/Lazy-Desman/DeltaruneRus/refs/heads/main/lang/ru/"
 }
