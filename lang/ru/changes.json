@@ -1,4 +1,14 @@
 {
+    "4.0.1": {
+        "description": "- Исправлен вылезающий текст в одном диалоге.\n- Исправлен отсутствующий звук в 3 главе.\n- И ещё несколько изменений помельче.",
+        "files": [
+            "chapter4/strings.json",
+            "chapter3/strings.json",
+            "chapter2/strings.json",
+            "chapter1/strings.json",
+            "chapter3/sounds/snd_its_tv_time.ogg"
+        ]
+    },
     "4.0.0": {
         "description": "- Релизная версия.",
         "files": []
