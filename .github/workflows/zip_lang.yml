@@ -85,7 +85,7 @@ jobs:
               }
             );
             const assetsToDelete = assets.filter(asset => 
-              asset.name.startsWith('lang.') || asset.name.startsWith('translation_')
+              asset.name.startsWith('lang.')
             );
             for (const asset of assetsToDelete) {
               await github.rest.repos.deleteReleaseAsset({
