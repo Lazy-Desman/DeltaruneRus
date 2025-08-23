@@ -25,7 +25,12 @@ jobs:
       - name: Create "lang.7z" ("fast" compression)
         run: |
           7z a -t7z -mx=1 lang.7z ./lang
-          7z d lang.7z lang/en -r
+
+      - name: Create "lang.zip"
+        run: |
+          cd lang
+          zip lang.zip ./ru -r
+          cd ..
           
       - name: Move "latest" tag to current commit
         run: |
@@ -90,24 +95,17 @@ jobs:
               });
             }
             
-      - name: Upload "lang" archive
+      - name: Upload "lang.7z" archive
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ steps.get_release.outputs.upload_url }}
           asset_path: ./lang.7z
           asset_name: lang.7z
-
-      - name: Upload translation_changes.json
+            
+      - name: Upload "lang.zip" archive
         uses: shogo82148/actions-upload-release-asset@v1
         with:
           upload_url: ${{ steps.get_release.outputs.upload_url }}
-          asset_path: ./lang/ru/changes.json
-          asset_name: translation_changes.json
-
-      - name: Upload version_tr.txt
-        uses: shogo82148/actions-upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.get_release.outputs.upload_url }}
-          asset_path: ./lang/ru/version_tr.txt
-          asset_name: version_tr.txt
+          asset_path: ./lang/lang.zip
+          asset_name: lang.zip
 
