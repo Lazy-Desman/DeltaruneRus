@@ -39,17 +39,11 @@
             "xoffset": 7,
             "yoffset": 0
         },
-        "IMAGE_LOGO_CENTER_SEPARATE": {
-            "frame_num": 11
-        },
         "IMAGE_LOGO_CENTER_SHATTER_PIECES": {
             "frame_num": 123
         },
         "sp_IMAGE_LOGO_CENTER_SHATTER_PIECES": {
             "frame_num": 94
-        },
-        "sp_IMAGE_LOGO_CENTER_SEPARATE": {
-            "frame_num": 9
         },
         "spr_bnamekris": {
             "xoffset": -6
@@ -72,6 +66,13 @@
             "yoffset": 1
         },
         "spr_tutu": {
+            "yoffset": 10
+        },
+        "spr_plueypoints": {
+            "xoffset": 3,
+            "yoffset": 10
+        },
+        "sp_spr_plueypoints": {
             "yoffset": 10
         }
     },
