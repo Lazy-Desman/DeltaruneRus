@@ -14,7 +14,20 @@
             "xoffset": 45
         },
         "spr_battlemsg": {
-            "xoffset": 132
+            "xoffset": 132,
+			"frame_num": 17
+        },
+        "spr_battlemsg_m": {
+		    "xoffset": 132,
+			"frame_num": 17
+        },
+        "spr_battlemsg_f": {
+		    "xoffset": 132,
+			"frame_num": 17
+        },
+        "spr_battlemsg_n": {
+		    "xoffset": 132,
+			"frame_num": 17
         },
         "spr_conbini_sign_clopen": {
             "xoffset": 11
