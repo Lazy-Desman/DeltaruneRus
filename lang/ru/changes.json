@@ -1,0 +1,43 @@
+{
+    "4.2.0": {
+        "description": "- Ленты -> бантики\n - Обновлены спрайты QC\n - Всякая прочая мелочь",
+        "files": [
+            "chapter1/strings.json",
+            "chapter2/strings.json",
+            "chapter3/strings.json",
+            "chapter4/strings.json",
+            "chapter3/chapter_settings.json",
+            "chapter4/chapter_settings.json",
+            "chapter1/sprites/bg_building_diner.png",
+            "chapter1/sprites/sp_bg_building_diner.png",
+            "chapter2/sprites/bg_building_diner.png",
+            "chapter2/sprites/sp_bg_building_diner.png",
+            "chapter4/sprites/bg_building_diner.png",
+            "chapter4/sprites/sp_bg_building_diner.png"
+        ]
+    },
+    "4.1.1": {
+        "description": "- Пара небольших правок",
+        "files": [
+            "chapter4/strings.json"
+        ]
+    },
+    "4.1.0": {
+        "description": "- Всякие правки",
+        "files": []
+    },
+    "4.0.1": {
+        "description": "- Исправлен вылезающий текст в одном диалоге.\n- Исправлен отсутствующий звук в 3 главе.\n- И ещё несколько изменений помельче.",
+        "files": [
+            "chapter4/strings.json",
+            "chapter3/strings.json",
+            "chapter2/strings.json",
+            "chapter1/strings.json",
+            "chapter3/sounds/snd_its_tv_time.ogg"
+        ]
+    },
+    "4.0.0": {
+        "description": "- Релизная версия.",
+        "files": []
+    }
+}
