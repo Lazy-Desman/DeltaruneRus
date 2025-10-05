@@ -30,6 +30,7 @@ jobs:
         run: |
           cd lang
           zip lang.zip . -r
+          zip -d lang.zip ru/*
           cd ..
           
       - name: Move "latest" tag to current commit
