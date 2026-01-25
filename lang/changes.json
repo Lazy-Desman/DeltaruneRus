@@ -1,4 +1,20 @@
 {
+    "4.3.0": {
+        "description": "- Ранги в мини-играх возвращены к латинице\n - Мята жизни -> леденец жизни\n - Всякая прочая мелочь",
+        "files": [
+            "chapter1/strings.json",
+            "chapter2/strings.json",
+            "chapter3/strings.json",
+            "chapter4/strings.json",
+            "chapter3/sprites/spr_dw_green_room_door_changing.png",
+            "chapter3/sprites/spr_dw_inbetween_room_door.png",
+            "chapter3/sprites/spr_dw_ranking_door_a.png",
+            "chapter3/sprites/spr_dw_ranking_door_b.png",
+            "chapter3/sprites/spr_dw_ranking_door_c.png",
+            "chapter3/sprites/spr_dw_ranking_door_z.png",
+            "chapter3/sprites/spr_krisu_dark_cool.png"
+        ]
+    },
     "4.2.0": {
         "description": "- Ленты -> бантики\n - Обновлены спрайты QC\n - Всякая прочая мелочь",
         "files": [
