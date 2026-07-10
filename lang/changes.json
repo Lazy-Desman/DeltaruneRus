@@ -1,4 +1,17 @@
 {
+    "4.4.0": {
+        "description": "- Всякие исправления в строках.\n- Обновление меню выбора глав для 5 главы.\n- Обновлено видео Тенны.",
+        "files": [
+            "chapter1/strings.json",
+            "chapter2/strings.json",
+            "chapter3/strings.json",
+            "chapter4/strings.json",
+            "chapter3/vid/tennaintrof1_compressed_28.mp4",
+            "settings.json",
+            "strings.json"
+        ],
+        "datas": [0]
+    },
     "4.3.0": {
         "description": "- Ранги в мини-играх возвращены к латинице\n - Мята жизни -> леденец жизни\n - Всякая прочая мелочь",
         "files": [

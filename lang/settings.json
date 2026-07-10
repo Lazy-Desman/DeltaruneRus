@@ -8,11 +8,5 @@
     "enable_translated_songs_switch": true,
     "monospace_fonts": false,
     "files_url": "https://raw.githubusercontent.com/Lazy-Desman/DeltaruneRus/refs/heads/main/lang/",
-    "datas_url": [
-        "https://github.com/Lazy-Desman/DeltranslatePatch/releases/download/latest/data_menu.win",
-        "https://github.com/Lazy-Desman/DeltranslatePatch/releases/download/latest/data_ch1.win",
-        "https://github.com/Lazy-Desman/DeltranslatePatch/releases/download/latest/data_ch2.win",
-        "https://github.com/Lazy-Desman/DeltranslatePatch/releases/download/latest/data_ch3.win",
-        "https://github.com/Lazy-Desman/DeltranslatePatch/releases/download/latest/data_ch4.win"
-    ]
+    "datas_url": "https://github.com/Lazy-Desman/DeltranslatePatch/releases/download/latest/"
 }
