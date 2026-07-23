@@ -1,0 +1,132 @@
+{
+    "sprites_settings": {
+        "spr_chapter_insert_prompt_letters": {
+            "frame_num": 46
+        },
+        "spr_btact": {
+            "xoffset": 7,
+            "yoffset": 0
+        },
+        "spr_conbini_sign_open": {
+            "xoffset": 11
+        },
+        "spr_castle_dojo_sign_love": {
+            "xoffset": 5
+        },
+        "spr_battleblcon_z": {
+            "xoffset": 45
+        },
+        "spr_battlemsg": {
+            "xoffset": 132
+        },
+        "spr_btdefend": {
+            "xoffset": 7,
+            "yoffset": 0
+        },
+        "spr_btitem": {
+            "xoffset": 7,
+            "yoffset": 0
+        },
+        "spr_btfight": {
+            "xoffset": 7,
+            "yoffset": 0
+        },
+        "spr_btspare": {
+            "xoffset": 7,
+            "yoffset": 0
+        },
+        "spr_bttech": {
+            "xoffset": 7,
+            "yoffset": 0
+        },
+        "spr_bnameralsei": {
+            "yoffset": 1
+        },
+        "spr_darkmenudesc": {
+            "xoffset": 9,
+            "yoffset": 1
+        },
+        "IMAGE_LOGO_CENTER_SEPARATE_GLOW_3": {
+            "yoffset": 276
+        },
+        "IMAGE_LOGO_256": {
+            "yoffset": 138
+        },
+        "spr_town_conbini_sign_nope": {
+            "xoffset": 11
+        },
+        "spr_lw_conbini_open_sign": {
+            "xoffset": 11
+        }
+    },
+
+    "jack_phrases": [
+        [" ВЫ", " ТЯНУТЬ", "           ", "СЯ        "],
+        ["  ", " ТЯНУ", "           ", "ТЬСЯ    "]
+    ],
+    "jack_timings": [
+        [0, 15, 15, 35],
+        [0, 2, 2, 11]
+    ],
+    "translators_credits": [
+        [
+            {
+                "header": ["-Русская локализация-"],
+                "text_line": ["Ленивая выхухоль"],
+                "columns": 1
+            },
+            {
+                "header": ["      -Глава-     -Талисман-"],
+                "text_line": ["Паскаль", "Неприм"],
+                "columns": 2
+            },
+            {
+                "header": ["-Переводчики-"],
+                "text_line": [
+                    "Holeg",
+                    "MelT",
+                    "Arthur0x5",
+                    "Marine367",
+                    
+                    "Arthis1",
+                    "Wollip",
+                    "Розовый стакан",
+                    "Niko the Nikobold"
+                ],
+                "columns": 2
+            }
+        ],
+        [
+			{
+                "header": ["-Главный помогатор-"],
+                "text_line": ["DubstepDude"],
+                "columns": 1
+            },
+			{
+                "header": ["-Помощь с программированием-"],
+                "text_line": ["Wollip"],
+                "columns": 1
+            },
+			{
+                "header": ["                -Озвучка-     -Звукорежиссура-"],
+                "text_line": ["Андрей Лангерманн", "Макс Манн"],
+                "columns": 2
+            },
+            {
+                "header":    ["-Русская графика-"],
+                "text_line": [
+                    "MelT",
+                    "NOTEblockhead",
+                    
+                    "snus", 
+                    "Иван Сидоров"
+                ],
+                "columns": 2
+            }
+        ]
+    ],
+    "tome_bullet_letters": "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ",
+    "additional_voicelines": {
+        "В": "snd_flowery_voiceclip_youre_a_hero_2"
+    }
+}
