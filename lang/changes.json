@@ -1,4 +1,8 @@
 {
+    "5.0.1": {
+        "description": "- Быстрое исправление всяких опечаток.",
+        "files": ["chapter5/strings.json"]
+    },
     "5.0.0": {
         "description": "- Релиз 5 главы!",
         "files": [],
