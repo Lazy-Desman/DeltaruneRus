@@ -14,20 +14,7 @@
             "xoffset": 45
         },
         "spr_battlemsg": {
-            "xoffset": 132,
-			"frame_num": 17
-        },
-        "spr_battlemsg_m": {
-		    "xoffset": 132,
-			"frame_num": 17
-        },
-        "spr_battlemsg_f": {
-		    "xoffset": 132,
-			"frame_num": 17
-        },
-        "spr_battlemsg_n": {
-		    "xoffset": 132,
-			"frame_num": 17
+            "xoffset": 132
         },
         "spr_conbini_sign_clopen": {
             "xoffset": 11
@@ -58,20 +45,7 @@
         "sp_IMAGE_LOGO_CENTER_SHATTER_PIECES": {
             "frame_num": 94
         },
-        "spr_bnamekris": {
-            "xoffset": -6
-        },
         "spr_bnameralsei": {
-            "xoffset": -4,
-            "yoffset": 1
-        },
-        "spr_bnamesusie": {
-            "xoffset": -3
-        },
-        "spr_hpname": {
-            "xoffset": -2
-            },
-        "spr_hero_hp": {
             "yoffset": 1
         },
         "spr_darkmenudesc": {
