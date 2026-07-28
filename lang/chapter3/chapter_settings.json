@@ -171,7 +171,7 @@
 			"frame_num": 60
         },
 	    "spr_dw_tv_time_intro": {
-			"frame_num": 195
+			"frame_num": 194
         },
         "spr_funnytext_game_over": {
 		    "xoffset": 260,
