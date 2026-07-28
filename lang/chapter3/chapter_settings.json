@@ -103,12 +103,6 @@
 		"spr_hpname": {
 		    "xoffset": -2
         },
-		"spr_hero_hp": {
-			"yoffset": 1
-        },
-		"spr_arcade_fight": {
-			"yoffset": 1
-        },
         "spr_funnytext_stars": {
 			"yoffset": 50
         },
@@ -121,10 +115,6 @@
         "spr_darkmenudesc": {
             "xoffset": 9,
             "yoffset": 1
-        },
-        "spr_gandalf": {
-            "xoffset": 92,
-            "yoffset": 40
         },
         "spr_funnytext_star2": {
             "xoffset": 92,
