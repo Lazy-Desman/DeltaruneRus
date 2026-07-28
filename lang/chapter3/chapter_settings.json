@@ -170,6 +170,9 @@
 		    "xoffset": 65,
 			"frame_num": 60
         },
+	    "spr_dw_tv_time_intro": {
+			"frame_num": 195
+        },
         "spr_funnytext_game_over": {
 		    "xoffset": 260,
 			"yoffset": 65,
