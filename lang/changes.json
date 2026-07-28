@@ -1,4 +1,8 @@
 {
+    "5.0.7": {
+        "description": "- И ещё всяческие правки строк.",
+        "files": ["chapter5/strings.json"]
+    },
     "5.0.6": {
         "description": "- Всякие исправления диалогов.",
         "files": ["chapter5/strings.json"]
