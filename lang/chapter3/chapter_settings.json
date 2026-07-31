@@ -90,18 +90,8 @@
         "spr_funnytext_toriel": {
             "frame_num": 18
         },
-        "spr_bnamekris": {
-		    "xoffset": -6
-        },
         "spr_bnameralsei": {
-		    "xoffset": -4,
 			"yoffset": 1
-        },
-        "spr_bnamesusie": {
-		    "xoffset": -3
-        },
-		"spr_hpname": {
-		    "xoffset": -2
         },
         "spr_funnytext_stars": {
 			"yoffset": 50
