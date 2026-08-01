@@ -5927,6 +5927,8 @@
     "gml_Object_obj_chapter_continue_Create_0_1": "Вернуться к главе 1",
     "obj_screen_loading_slash_Create_0_gml_1_0": "ЗАПУСК\nГЛАВЫ ~1",
     "obj_screen_loading_slash_Create_0_gml_2_0": "ЗАГРУЗКА\nВЫБОРА\nГЛАВЫ",
+    "obj_darkcontroller_slash_Create_0_gml_1_0": "Рамка",
+    "obj_darkcontroller_slash_Create_0_gml_4_0": "Нет",
     "UNUSED_slash_UNUSED_gml_1_0": "Где...",
     "UNUSED_slash_UNUSED_gml_2_0": "Где я?",
     "UNUSED_slash_UNUSED_gml_3_0": "Ау-у-у?.. Кто-нибудь?..",
