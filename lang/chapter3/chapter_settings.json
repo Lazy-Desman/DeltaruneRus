@@ -78,6 +78,9 @@
         "IMAGE_LOGO_CENTER_SEPARATE": {
             "frame_num": 11
         },
+        "spr_rhythmgame_popularity": {
+            "frame_num": 2
+        },
         "sp_IMAGE_LOGO_CENTER_SEPARATE": {
             "frame_num": 9
         },
