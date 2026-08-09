@@ -5928,6 +5928,8 @@
     "obj_screen_loading_slash_Create_0_gml_1_0": "ЗАПУСК\nГЛАВЫ ~1",
     "obj_screen_loading_slash_Create_0_gml_2_0": "ЗАГРУЗКА\nВЫБОРА\nГЛАВЫ",
     "obj_darkcontroller_slash_Create_0_gml_1_0": "Рамка",
+    "obj_darkcontroller_slash_Create_0_gml_2_0": "Динамическая",
+    "obj_darkcontroller_slash_Create_0_gml_3_0": "Простая",
     "obj_darkcontroller_slash_Create_0_gml_4_0": "Нет",
     "UNUSED_slash_UNUSED_gml_1_0": "Где...",
     "UNUSED_slash_UNUSED_gml_2_0": "Где я?",
